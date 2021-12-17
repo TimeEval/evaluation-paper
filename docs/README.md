@@ -58,16 +58,30 @@ In addition, we give some further metadata about and insights into data, algorit
 
 ### Evaluation Metrics
 
-> tbd
+We use threshold-agnostic evaluation metrics that calculate a single value by comparing the anomaly scorings to the labels. The metrics calculate the area under a curve, which is realized with the Python Package _scikit-learn_ [^sklearn].
+The different metrics have different reward and penalize foci.
+
+#### AUC-ROC
+
+The _Area under the Receiver Operator Characteristic Curve_ [^HanleyMcNeil1982AUCROC] [^Bradley1997AUCROC] (AUC-ROC) contrasts the _True Positives Rate_ (TPR) with the _False Positives Rate_ (FPR or Recall). Its focus is on an algorithm's sensitivity.
+
+#### AUC-PR
+
+The _Area under the Precision Recall Curve_ [^Raghavan1989AUCPR] [^Davis2006AUCPR] (AUC-PR) contrasts the _Precision_ with the _Recall_. Its focus is on an algorithm's preciseness.
+
+#### AUC-P<sub>T</sub>R<sub>T</sub>
+
+The _Area under the Range Based Precision Recall Curve_ [^Nesime2018Range] (AUC-P<sub>T</sub>R<sub>T</sub>) softens the very strict preciseness requirements of AUC-PR to adapt the measure to subsequences. We use the Python Package _prts_ [^prts] to calculate the range-based Precision and Recall values and, further, use them to get the area under its curve. We used the following (default) values for the range-based metrics:
+
+| Parameter | Value |
+| --------- | ----- |
+|   alpha   |  0.0  |
+| cardinality | one |
+|    bias   | flat  |
 
 <!--
-- we use threshold-agnostic evaluation metrics:
-  - AUC-ROC
-  - AUC-PR
-  - AUC-RANGE-PR
-  - AVERAGE-PRECISION
+#### AVERAGE-PRECISION
 
-- explain, how we implement AUC-RANGE-PR, the parameters, and our sampling
 -->
 
 ## Related Resources
@@ -93,6 +107,13 @@ In addition, we give some further metadata about and insights into data, algorit
 [^CookEtAl2020Anomaly]: Cook, Andrew A., Goksel Misirli, and Zhong Fan. "Anomaly Detection for IoT Time-Series Data: A Survey." IEEE Internet of Things Journal 7, no. 7 (2020): 6481–94. https://doi.org/10.1109/JIOT.2019.2958185.
 [^GuptaEtAl2014Outlier]: Gupta, Manish, Jing Gao, Charu C. Aggarwal, and Jiawei Han. "Outlier Detection for Temporal Data: A Survey." IEEE Transactions on Knowledge and Data Engineering (TKDE) 26, no. 9 (2014): 2250–67. https://doi.org/10.1109/TKDE.2013.184.
 [^HodgeAustin2004Survey]: Hodge, Victoria J., and Jim Austin. "A Survey of Outlier Detection Methodologies." Artificial Intelligence Review 22, no. 2 (2004): 85–126. https://doi.org/10.1007/s10462-004-4304-y.
+[^sklearn]: Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011. https://scikit-learn.org.
+[^HanleyMcNeil1982AUCROC]: James A Hanley and Barbara J McNeil. "The meaningand use of the area under a receiver operating characteristic (roc) curve." Radiology, 143, 1 (1982): 29–36.
+[^Bradley1997AUCROC]: Andrew P Bradley. "The use of the area under the roc curve in the evaluation of machine learning algorithms." Pattern recognition, 30, 7 (1997): 1145–1159.
+[^Raghavan1989AUCPR]: Vijay Raghavan, Peter Bollmann, and Gwang S. Jung. "A critical investigation of recall and precision as measuresof retrieval system performance." ACM Trans. Inf. Syst., 7, 3 (1989): 205–229.
+[^Davis2006AUCPR]: Jesse Davis and Mark Goadrich. "The relationship between Precision-Recall and ROC curves." In Proceedings of the International Conference on Machine Learning (2006): 233–240. https://doi.org/10.1145/1143844.1143874.
+[^prts]: https://pypi.org/project/prts/
+[^Nesime2018Range]: Nesime Tatbul, Tae Jun Lee, Stan Zdonik, Mejbah Alam,and Justin Gottschlich. 2018. Precision and Recall for TimeSeries. InProceedings of the International Conference onNeural Information Processing Systems (NeurIPS), 1920–1930.
 
 
 [paper]: # "paper download link pending"
