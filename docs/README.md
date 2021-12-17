@@ -76,7 +76,7 @@ In addition, we give some further metadata about and insights into data, algorit
 - Source code repositories:
   - Evaluation tool TimeEval: [Github](https://github.com/HPI-Information-Systems/TimeEval)
   - Time series anomaly generator GutenTAG: [Github](https://github.com/HPI-Information-Systems/gutentag)
-  - Algorithm source code (and necessary docker iamges)
+  - Algorithm source code (and necessary docker images)
     > tbd
 
 - [HPI umbrella project](https://hpi.de/naumann/projects/distributed-computing/efficient-subsequence-anomaly-detection-on-time-series-data.html)
