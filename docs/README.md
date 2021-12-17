@@ -3,7 +3,7 @@
 This is the supporting website for the paper ["Anomaly Detection in Time Series: A Comprehensive Evaluation"][paper].
 On this website, we provide the implementations of all algorithms, links to the used datasets, additional algorithm and dataset metadata, as well as further insights from our results that did not make it into the paper.
 
-If you use our artifacts, please consider [citing our paper](#Reference).
+If you use our artifacts, please consider [citing our paper](#reference).
 
 ## Reference
 

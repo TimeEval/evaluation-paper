@@ -1,7 +1,6 @@
 ---
 title: Datasets
 description: This page lists univariate and multivariate time series anomaly detection datasets used in the experimental evaluation paper.
-permalink: /datasets/
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js" type="text/javascript"></script>
@@ -295,49 +294,53 @@ The following table shows the dataset collections and their metadata:
 Column "Dim." shows the input dimensionality of the included datasets; either univariate or multivariate and colum "Learn." shows the supported learning types.
 The short forms "u", "m", and "s" stand for "unsupervised", "semi-supervised", and "supervised" respectively.
 
-Note that the datasets of the `GutenTAG`-collection are synthetically generated using our own, novel time series anomaly generator GutenTAG (see Sect. [GutenTAG](#GutenTAG)).
+Note that the datasets of the `GutenTAG`-collection are synthetically generated using our own, novel time series anomaly generator GutenTAG (see [GutenTAG](https://github.com/HPI-Information-Systems/gutentag)).
 All other datasets were provided by the community.
 
 > We would like to thank all members of our community that published or provided their data, without which this
 work would not have been possible.
 
-The next section (Sect. [Collection of existing datasets](#Collection-of-existing-datasets)) describes the dataset collection and preprocessing process for the existing datasets, while Sect. [GutenTAG](#GutenTAG) introduces our anomaly generator and the generated datasets.
+The next section (Sect. [Collection of existing datasets](#collection-of-existing-datasets)) describes the dataset collection and preprocessing process for the existing datasets.
 
-## Collection of Existing Datasets
+## Collection of Datasets
 
 ### Sources
 
 We collected the existing datasets from different sources: time series anomaly detection publications, and data repositories, such as the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).
-The following table lists the sources of our datasets and provides the links to download the raw data.
+The following table lists the sources of our datasets and provides the links to download the raw data as well as our preprocessed datasets.
+
+> For the preprocessed datasets in TimeEval format the [MIT License](../LICENSE) applies, where not otherwise stated.
+>
+> If you use any of these datasets in your research, please reference the original data source as well as [our paper](../#reference).
 
 | Collection  | Paper | Download Source | Preprocessed (TimeEval format) |
 | :---------- | :---- | :-------------- | :----------------------------- |
-| CalIt2      | - | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/CalIt2+Building+People+Counts) | [⬇](https://owncloud.hpi.de/s/JhYwxfWp5JX05uA) (<1MB) |
-| Daphnet     | doi:[10.1109/TITB.2009.2036165](https://doi.org/10.1109/TITB.2009.2036165) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Daphnet+Freezing+of+Gait) | [⬇](https://owncloud.hpi.de/s/ieohjdwJrg9WWAp) (15MB) |
-| Dodgers     | - | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Dodgers+Loop+Sensor) | [⬇](https://owncloud.hpi.de/s/h5BTYIGX3FDb3RQ) (<1MB)) |
-| Exathlon    | doi:[10.14778/3476249.3476307](https://doi.org/10.14778/3476249.3476307) | [Github Repository](https://github.com/exathlonbenchmark/exathlon) | [⬇](https://owncloud.hpi.de/s/o3U8VrNmC5EV2Sp) (106MB)) |
-| GHL         | arXiv:[1612.06676](https://arxiv.org/abs/1612.06676)| [Paper Website](https://kas.pr/ics-research/dataset_ghl_1) | [⬇](https://owncloud.hpi.de/s/TKlMcq1Oy2fcxeA) (153MB) |
-| Genesis     | doi:[10.1007/978-3-662-57805-6_4](https://doi.org/10.1007/978-3-662-57805-6_4)| [Kaggle Dataset Repository](https://www.kaggle.com/inIT-OWL/genesis-demonstrator-data-for-machine-learning) | [⬇](https://owncloud.hpi.de/s/0M3dxkr3TfXJduJ) (<1MB) |
-| GutenTAG    | ours | see [below](#GutenTAG) | [⬇](https://owncloud.hpi.de/s/pmI2A3Msa46cYnK) (106MB) |
+| CalIt2      | - | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/CalIt2+Building+People+Counts) | [⬇](https://owncloud.hpi.de/s/JhYwxfWp5JX05uA/download) (<1MB) |
+| Daphnet     | doi:[10.1109/TITB.2009.2036165](https://doi.org/10.1109/TITB.2009.2036165) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Daphnet+Freezing+of+Gait) | [⬇](https://owncloud.hpi.de/s/ieohjdwJrg9WWAp/download) (15MB) |
+| Dodgers     | - | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Dodgers+Loop+Sensor) | [⬇](https://owncloud.hpi.de/s/h5BTYIGX3FDb3RQ/download) (<1MB)) |
+| Exathlon    | doi:[10.14778/3476249.3476307](https://doi.org/10.14778/3476249.3476307) | [Github Repository](https://github.com/exathlonbenchmark/exathlon) | [⬇](https://owncloud.hpi.de/s/o3U8VrNmC5EV2Sp/download) (106MB)) |
+| GHL         | arXiv:[1612.06676](https://arxiv.org/abs/1612.06676)| [Paper Website](https://kas.pr/ics-research/dataset_ghl_1) | [⬇](https://owncloud.hpi.de/s/TKlMcq1Oy2fcxeA/download) (153MB) |
+| Genesis     | doi:[10.1007/978-3-662-57805-6_4](https://doi.org/10.1007/978-3-662-57805-6_4)| [Kaggle Dataset Repository](https://www.kaggle.com/inIT-OWL/genesis-demonstrator-data-for-machine-learning) | [⬇](https://owncloud.hpi.de/s/0M3dxkr3TfXJduJ/download) (<1MB) |
+| GutenTAG    | ours | see [below](#GutenTAG) | [⬇](https://owncloud.hpi.de/s/pmI2A3Msa46cYnK/download) (106MB) |
 | IOPS        | doi[10.1145/3292500.3330680](https://doi.org/10.1145/3292500.3330680)| [Challenge Website](http://iops.ai/dataset_detail/?id=10) | (not allowed to share) |
-| KDD-TSAD    | arXiv:[2009.13807](http://arxiv.org/abs/2009.13807) | [Challenge Website](https://compete.hexagon-ml.com/practice/competition/39/) | [⬇](https://owncloud.hpi.de/s/jN8Y8bWNQxkxp7w) (110MB) |
+| KDD-TSAD    | arXiv:[2009.13807](http://arxiv.org/abs/2009.13807) | [Challenge Website](https://compete.hexagon-ml.com/practice/competition/39/) | [⬇](https://owncloud.hpi.de/s/jN8Y8bWNQxkxp7w/download) (110MB) |
 | Kitsune     | doi:[10.14722/ndss.2018.23204](https://doi.org/10.14722/ndss.2018.23204) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Kitsune+Network+Attack+Dataset) | ⬇ (13.5GB) |
-| LTDB        | doi:[10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215) | doi:[10.13026/C2KS3F](https://doi.org/10.13026/C2KS3F) (PhysioNet) | ⬇ (405MB) |
-| MGAB        | - | doi:[10.5281/zenodo.3760086](https://doi.org/10.5281/zenodo.3760086) | ⬇ (12MB) |
-| MITDB       | doi:[10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215) | doi:[10.13026/C2F305](https://doi.org/10.13026/C2F305) (PhysioNet) | ⬇ (176MB) |
-| Metro       | doi:[10.1109/I2MTC.2015.7151267](https://doi.org/10.1109/I2MTC.2015.7151267) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Metro+Interstate+Traffic+Volume) | ⬇ (<1MB) |
-| NAB         | doi:[10.1016/j.neucom.2017.04.070](https://doi.org/10.1016/j.neucom.2017.04.070) | [Benchmark Website (Github)](https://github.com/htm-community/NAB) | ⬇ (2MB; the same [AGPL-license](https://github.com/htm-community/NAB/blob/master/LICENSE.txt) applies) |
-| NASA-MSL    | doi:[10.1145/3219819.3219845](https://doi.org/10.1145/3219819.3219845) | [Paper Website (Github)](https://github.com/khundman/telemanom) | ⬇ (<1MB) |
-| NASA-SMAP   | doi:[10.1145/3219819.3219845](https://doi.org/10.1145/3219819.3219845) | [Paper Website (Github)](https://github.com/khundman/telemanom) | ⬇ (2MB) |
-| OPPORTUNITY | doi:[10.1109/INSS.2010.5573462](https://doi.org/10.1109/INSS.2010.5573462) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/URL+Reputation) | ⬇ (204MB) |
-| Occupancy   | doi:[10.1016/j.enbuild.2015.11.071](https://doi.org/10.1016/j.enbuild.2015.11.071) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+) | ⬇ (<1MB) |
-| SMD         | doi:[10.1145/3292500.3330672](https://doi.org/10.1145/3292500.3330672)| [Paper Website (Github)](https://github.com/NetManAIOps/OmniAnomaly) | ⬇ (99MB) |
+| LTDB        | doi:[10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215) | doi:[10.13026/C2KS3F](https://doi.org/10.13026/C2KS3F) (PhysioNet) | [⬇](https://owncloud.hpi.de/s/aRpOrDwt38TbdG1/download) (405MB) |
+| MGAB        | - | doi:[10.5281/zenodo.3760086](https://doi.org/10.5281/zenodo.3760086) | [⬇](https://owncloud.hpi.de/s/eMfoZdWDOL1FXaY/download) (12MB) |
+| MITDB       | doi:[10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215) | doi:[10.13026/C2F305](https://doi.org/10.13026/C2F305) (PhysioNet) | [⬇](https://owncloud.hpi.de/s/FuMIxjTDeYs48fc/download) (176MB) |
+| Metro       | doi:[10.1109/I2MTC.2015.7151267](https://doi.org/10.1109/I2MTC.2015.7151267) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Metro+Interstate+Traffic+Volume) | [⬇](https://owncloud.hpi.de/s/yRq1xKeyFiSBVAp/download) (<1MB) |
+| NAB         | doi:[10.1016/j.neucom.2017.04.070](https://doi.org/10.1016/j.neucom.2017.04.070) | [Benchmark Website (Github)](https://github.com/htm-community/NAB) | [⬇](https://owncloud.hpi.de/s/pgJf8HsStreVmhR/download) (2MB; the same [AGPL-license](https://github.com/htm-community/NAB/blob/master/LICENSE.txt) applies) |
+| NASA-MSL    | doi:[10.1145/3219819.3219845](https://doi.org/10.1145/3219819.3219845) | [Paper Website (Github)](https://github.com/khundman/telemanom) | [⬇](https://owncloud.hpi.de/s/GQi5Fy7fPyh1Rz8/download) (<1MB) |
+| NASA-SMAP   | doi:[10.1145/3219819.3219845](https://doi.org/10.1145/3219819.3219845) | [Paper Website (Github)](https://github.com/khundman/telemanom) | [⬇](https://owncloud.hpi.de/s/FYl8kRUBvla0IHx/download) (2MB) |
+| OPPORTUNITY | doi:[10.1109/INSS.2010.5573462](https://doi.org/10.1109/INSS.2010.5573462) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/URL+Reputation) | [⬇](https://owncloud.hpi.de/s/JJdepYA1zMdAsCa/download) (204MB) |
+| Occupancy   | doi:[10.1016/j.enbuild.2015.11.071](https://doi.org/10.1016/j.enbuild.2015.11.071) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+) | [⬇](https://owncloud.hpi.de/s/wrIxS1BiaX8AGyC/download) (<1MB) |
+| SMD         | doi:[10.1145/3292500.3330672](https://doi.org/10.1145/3292500.3330672)| [Paper Website (Github)](https://github.com/NetManAIOps/OmniAnomaly) | [⬇](https://owncloud.hpi.de/s/Ea7rsjmDErZ3QCN/download) (99MB) |
 | SSA (SensorScope) | doi:[10.1016/j.peva.2010.08.018](https://doi.org/10.1016/j.peva.2010.08.018) | from [John Paparrizos](http://people.cs.uchicago.edu/~jopa/) (orignally from the [SensorScope project at EPFL](http://sensorscope.epfl.ch/) \[link seems down\]) | (not allowed to share) |
-| SVDB        | [MIT library](https://dspace.mit.edu/handle/1721.1/29206) | doi:[10.13026/C2V30W](https://doi.org/10.13026/C2V30W) (PhysioNet) | ⬇ (103MB) |
+| SVDB        | [MIT library](https://dspace.mit.edu/handle/1721.1/29206) | doi:[10.13026/C2V30W](https://doi.org/10.13026/C2V30W) (PhysioNet) | [⬇](https://owncloud.hpi.de/s/qsyGjJb9UtDFfCa/download) (103MB) |
 | WebscopeS5  | - | [Website](https://webscope.sandbox.yahoo.com/catalog.php?datatype=s&did=70) | (not allowed to share) |
 
-You can download a spreadsheet as an index to the preprocessed datasets with metadata in CSV-format from [here](https://owncloud.hpi.de/s/3Cp8Q5H9gn7EVK0).
-This file contains the same metadata as the dataset overview in Sect. [Existing dataset list](#Existing-dataset-list).
+You can download a spreadsheet as an index to the preprocessed datasets with metadata in CSV-format from [here](https://owncloud.hpi.de/s/3Cp8Q5H9gn7EVK0/download).
+This file contains the same metadata as the dataset overview in Sect. [Dataset list](#dataset-list).
 
 > Note that the GutenTAG-collection contains its own index-file, called `datasets.csv`.
 
@@ -351,7 +354,7 @@ The preprocessing had the following goals:
 3. Extraction of metadata
 
 **We do not perform standardization, feature extraction, or similar steps** because this might be different for different algorithms and should, thus, be part of the algorithm.
-We describe the individual preprocessing steps per collection in the next Sect. [Preprocessing Steps](#Preprocessing-Steps).
+We describe the individual preprocessing steps per collection in the next Sect. [Preprocessing Steps](#preprocessing-Steps).
 
 #### Preprocessing Steps
 
@@ -384,7 +387,7 @@ We provide an index file for the datasets that summarizes the datasets and also 
 The column "train_path" points to the training time series, column "train_is_normal" is `True` for semi-supervised training files, and the column "test_path" points to the testing time series.
 We compute all metrics only on the testing time series!
 
-### Existing dataset list
+### Dataset list
 
 We list the datasets used in our experimental evaluation paper in the following table.
 The datasets are grouped by their dataset collection, input dimensionality, and learning type.
@@ -417,7 +420,7 @@ For each dataset, we report the following metadata:
 We mark datasets that were excluded from our analysis in the paper with an asterisks ("\*").
 You can read more about the reasons of the exclusions in our paper.
 
-[stationarity]: https://www.statsmodels.org/stable/examples/notebooks/generated/stationarity_detrending_adf_kpss.html
+[^stationarity]: https://www.statsmodels.org/stable/examples/notebooks/generated/stationarity_detrending_adf_kpss.html
 
 <div>
 <style scoped>
@@ -29835,18 +29838,3 @@ You can read more about the reasons of the exclusions in our paper.
 </table>
 </div>
 
-## GutenTAG
-
-> tbd
-
-<!--
-- why? (copy from paper)
-  - explain how GutenTAG works: base oscillation and injection of anomalies
-  - showcase diff. base oscillations
-  - showcase diff. anomaly types
-  - explain generated datasets
-    - noise series
-    - anomaly type series
-    - anomaly position series
-    - ...
--->
