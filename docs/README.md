@@ -90,9 +90,7 @@ The _Area under the Range Based Precision Recall Curve_ [^Tatbul2018Range] (AUC-
 - Source code repositories:
   - Evaluation tool TimeEval: [Github](https://github.com/HPI-Information-Systems/TimeEval)
   - Time series anomaly generator GutenTAG: [Github](https://github.com/HPI-Information-Systems/gutentag)
-  - Algorithm source code (and necessary docker images)
-    > tbd
-
+  - Algorithm source code (and necessary docker images): [Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms)
 - [HPI umbrella project](https://hpi.de/naumann/projects/distributed-computing/efficient-subsequence-anomaly-detection-on-time-series-data.html)
 
 ## References
