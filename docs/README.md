@@ -51,10 +51,11 @@ In addition, we give some further metadata about and insights into data, algorit
   - on our synthetically generated datasets (GutenTAG)
   - on all the collected "real-world" datasets
   - (extra) on multivariate, synthetically generated datasets with correlation anomalies
-- Case studies:
-  - Datasets with no anomalies
-  - Datasets with a high contamination
-  - Large datasets
+- [Case studies](./notebooks/Case-studies.html):
+  - [Datasets with no anomalies](./notebooks/Case-studies.html#no-anomalies)
+  - [Datasets with a high contamination](./notebooks/Case-studies.html#high-contamination)
+  - Large datasets (tbd)
+  - [Parameter sensitivity](./notebooks/Case-studies.html#parameter-sensitivity)
 
 ### Evaluation Metrics
 
