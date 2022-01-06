@@ -300,7 +300,7 @@ All other datasets were provided by the community.
 > We would like to thank all members of our community that published or provided their data, without which this
 work would not have been possible.
 
-The next section (Sect. [Collection of existing datasets](#collection-of-existing-datasets)) describes the dataset collection and preprocessing process for the existing datasets.
+The next section (Sect. [Collection of existing datasets](#collection-of-datasets)) describes the dataset collection and preprocessing process for the existing datasets.
 
 ## Collection of Datasets
 
@@ -324,7 +324,7 @@ The following table lists the sources of our datasets and provides the links to 
 | GutenTAG    | ours | see [below](#GutenTAG) | [⬇](https://owncloud.hpi.de/s/pmI2A3Msa46cYnK/download) (106MB) |
 | IOPS        | doi[10.1145/3292500.3330680](https://doi.org/10.1145/3292500.3330680)| [Challenge Website](http://iops.ai/dataset_detail/?id=10) | (not allowed to share) |
 | KDD-TSAD    | arXiv:[2009.13807](http://arxiv.org/abs/2009.13807) | [Challenge Website](https://compete.hexagon-ml.com/practice/competition/39/) | [⬇](https://owncloud.hpi.de/s/jN8Y8bWNQxkxp7w/download) (110MB) |
-| Kitsune     | doi:[10.14722/ndss.2018.23204](https://doi.org/10.14722/ndss.2018.23204) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Kitsune+Network+Attack+Dataset) | ⬇ (13.5GB) |
+| Kitsune     | doi:[10.14722/ndss.2018.23204](https://doi.org/10.14722/ndss.2018.23204) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Kitsune+Network+Attack+Dataset) | [⬇](https://owncloud.hpi.de/s/VjpR4LGIjbnNE2x/download) (13.5GB) |
 | LTDB        | doi:[10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215) | doi:[10.13026/C2KS3F](https://doi.org/10.13026/C2KS3F) (PhysioNet) | [⬇](https://owncloud.hpi.de/s/aRpOrDwt38TbdG1/download) (405MB) |
 | MGAB        | - | doi:[10.5281/zenodo.3760086](https://doi.org/10.5281/zenodo.3760086) | [⬇](https://owncloud.hpi.de/s/eMfoZdWDOL1FXaY/download) (12MB) |
 | MITDB       | doi:[10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215) | doi:[10.13026/C2F305](https://doi.org/10.13026/C2F305) (PhysioNet) | [⬇](https://owncloud.hpi.de/s/FuMIxjTDeYs48fc/download) (176MB) |
@@ -354,7 +354,7 @@ The preprocessing had the following goals:
 3. Extraction of metadata
 
 **We do not perform standardization, feature extraction, or similar steps** because this might be different for different algorithms and should, thus, be part of the algorithm.
-We describe the individual preprocessing steps per collection in the next Sect. [Preprocessing Steps](#preprocessing-Steps).
+We describe the individual preprocessing steps per collection in the next Sect. [Preprocessing Steps](#preprocessing-steps).
 
 #### Preprocessing Steps
 
@@ -397,7 +397,7 @@ For each dataset, we report the following metadata:
 - **Index**: if the index is a monotonically increasing time step ID ("Integer") or a "Timestamp"
 - **Length**: number of time steps in the time series
 - **Width**: number of channels/dimensions of the time series
-- **Contamination**: the ratio of normal to all points (\\(\frac{\text{# anomalous points} }{length}\\))
+- **Contamination**: the ratio of anomalous to all points (\\(\frac{\text{# anomalous points} }{length}\\))
 - **# Anom.**: number of anomalies (anomalous subsequences)
 - **Min Anom. Length**: minimum length of the anomalous subsequences
 - **Median Anom. Length**: medium length of the anomalous subsequences
