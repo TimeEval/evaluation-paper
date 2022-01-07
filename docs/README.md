@@ -46,7 +46,7 @@ On this website, we provide the download-links for the datasets and algorithms u
 In addition, we give some further metadata about and insights into data, algorithms, and results:
 
 - [Datasets Overview and Metadata](./notebooks/Datasets.html)
-- Algorithms Overview and Metadata (tbd)
+- [Algorithms Overview and Metadata](./notebooks/Algorithms.html)
 - Detailed experimental evaluation results ... (tbd)
   - on our synthetically generated datasets (GutenTAG)
   - on all the collected "real-world" datasets
