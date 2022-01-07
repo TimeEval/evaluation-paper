@@ -1094,6 +1094,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### AE
+
 |Parameter|Value|
 |---|---|
 |latent_size|32|
@@ -1105,6 +1106,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### Bagel
+
 |Parameter|Value|
 |---|---|
 |window_size|2.0 dataset period size|
@@ -1120,6 +1122,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### CBLOF
+
 |Parameter|Value|
 |---|---|
 |n_clusters|50|
@@ -1130,17 +1133,20 @@ After an independent parameter search, we conducted the experiments with the fol
 |n_jobs|1|
 
 ### COF
+
 |Parameter|Value|
 |---|---|
 |n_neighbors|50|
 |random_state|42|
 
 ### COPOD
+
 |Parameter|Value|
 |---|---|
 |random_state|42|
 
 ### DAE
+
 |Parameter|Value|
 |---|---|
 |latent_size|32|
@@ -1153,6 +1159,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### DBStream
+
 |Parameter|Value|
 |---|---|
 |window_size|1.0 dataset period size|
@@ -1166,6 +1173,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### DeepAnT
+
 |Parameter|Value|
 |---|---|
 |epochs|500|
@@ -1179,6 +1187,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |early_stopping_patience|10|
 
 ### DeepNAP
+
 |Parameter|Value|
 |---|---|
 |anomaly_window_size|max anomaly length|
@@ -1197,6 +1206,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### Donut
+
 |Parameter|Value|
 |---|---|
 |window_size|1.0 dataset period size|
@@ -1207,6 +1217,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### DSPOT
+
 |Parameter|Value|
 |---|---|
 |q|default|
@@ -1220,6 +1231,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### DWT-MLEAD
+
 |Parameter|Value|
 |---|---|
 |start_level|3|
@@ -1227,6 +1239,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### EIF
+
 |Parameter|Value|
 |---|---|
 |n_trees|500|
@@ -1236,6 +1249,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### EncDec-AD
+
 |Parameter|Value|
 |---|---|
 |lstm_layers|3|
@@ -1253,6 +1267,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |test_batch_size|64|
 
 ### Ensemble GI
+
 |Parameter|Value|
 |---|---|
 |anomaly_window_size|max anomaly length|
@@ -1265,6 +1280,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |window_method|sliding|
 
 ### Fast-MCD
+
 |Parameter|Value|
 |---|---|
 |store_precision|True|
@@ -1272,6 +1288,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### FFT
+
 |Parameter|Value|
 |---|---|
 |fft_parameters|3|
@@ -1282,6 +1299,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### RForest
+
 |Parameter|Value|
 |---|---|
 |train_window_size|500|
@@ -1297,6 +1315,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |min_samples_leaf|1|
 
 ### XGBoosting
+
 |Parameter|Value|
 |---|---|
 |train_window_size|500|
@@ -1315,6 +1334,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |n_jobs|1|
 
 ### GrammarViz
+
 |Parameter|Value|
 |---|---|
 |anomaly_window_size|max anomaly length|
@@ -1324,6 +1344,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### HBOS
+
 |Parameter|Value|
 |---|---|
 |n_bins|20|
@@ -1332,6 +1353,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### HealthESN
+
 |Parameter|Value|
 |---|---|
 |linear_hidden_size|default|
@@ -1342,6 +1364,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### HIF
+
 |Parameter|Value|
 |---|---|
 |n_trees|500|
@@ -1349,6 +1372,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### HOT SAX
+
 |Parameter|Value|
 |---|---|
 |num_discords|None|
@@ -1359,6 +1383,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### Hybrid KNN
+
 |Parameter|Value|
 |---|---|
 |linear_layer_shape|default|
@@ -1375,6 +1400,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### IF-LOF
+
 |Parameter|Value|
 |---|---|
 |n_trees|500|
@@ -1385,6 +1411,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### iForest
+
 |Parameter|Value|
 |---|---|
 |n_trees|500|
@@ -1396,6 +1423,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |n_jobs|1|
 
 ### IE-CAE
+
 |Parameter|Value|
 |---|---|
 |anomaly_window_size|max anomaly length|
@@ -1413,6 +1441,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### k-Means
+
 |Parameter|Value|
 |---|---|
 |n_clusters|50|
@@ -1422,6 +1451,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### KNN
+
 |Parameter|Value|
 |---|---|
 |n_neighbors|50|
@@ -1433,6 +1463,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### LaserDBN
+
 |Parameter|Value|
 |---|---|
 |timesteps|2|
@@ -1440,6 +1471,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### Left STAMPi
+
 |Parameter|Value|
 |---|---|
 |anomaly_window_size|max anomaly length|
@@ -1447,6 +1479,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### LOF
+
 |Parameter|Value|
 |---|---|
 |n_neighbors|50|
@@ -1456,6 +1489,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### LSTM-AD
+
 |Parameter|Value|
 |---|---|
 |lstm_layers|1|
@@ -1472,6 +1506,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |test_batch_size|64|
 
 ### LSTM-VAE
+
 |Parameter|Value|
 |---|---|
 |rnn_hidden_size|5|
@@ -1485,12 +1520,14 @@ After an independent parameter search, we conducted the experiments with the fol
 |early_stopping_patience|10|
 
 ### MedianMethod
+
 |Parameter|Value|
 |---|---|
 |neighbourhood_size|2.0 dataset period size|
 |random_state|42|
 
 ### MSCRED
+
 |Parameter|Value|
 |---|---|
 |windows|default|
@@ -1506,6 +1543,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### MTAD-GAT
+
 |Parameter|Value|
 |---|---|
 |mag_window_size|40|
@@ -1526,6 +1564,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### MultiHMM
+
 |Parameter|Value|
 |---|---|
 |discretizer|choquet|
@@ -1533,6 +1572,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### NormA
+
 |Parameter|Value|
 |---|---|
 |anomaly_window_size|max anomaly length|
@@ -1540,6 +1580,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### Normalizing Flows
+
 |Parameter|Value|
 |---|---|
 |n_hidden_features_factor|1.0|
@@ -1557,6 +1598,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### NoveltySVR
+
 |Parameter|Value|
 |---|---|
 |n_init_train|10% of dataset length or until first anomaly|
@@ -1577,6 +1619,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### NumentaHTM
+
 |Parameter|Value|
 |---|---|
 |encoding_input_width|21|
@@ -1605,6 +1648,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### OceanWNN
+
 |Parameter|Value|
 |---|---|
 |train_window_size|500|
@@ -1625,6 +1669,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |with_threshold|True|
 
 ### OmniAnomaly
+
 |Parameter|Value|
 |---|---|
 |latent_size|4|
@@ -1640,6 +1685,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### PCC
+
 |Parameter|Value|
 |---|---|
 |n_components|default|
@@ -1651,6 +1697,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### PCI
+
 |Parameter|Value|
 |---|---|
 |window_size|0.5 dataset period size|
@@ -1658,6 +1705,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### PS-SVM
+
 |Parameter|Value|
 |---|---|
 |embed_dim_range|[0.5, 1.0, 1.5] * dataset period size|
@@ -1671,6 +1719,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### PST
+
 |Parameter|Value|
 |---|---|
 |window_size|1.0 dataset period size|
@@ -1682,6 +1731,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### RBForest
+
 |Parameter|Value|
 |---|---|
 |train_window_size|500|
@@ -1699,12 +1749,14 @@ After an independent parameter search, we conducted the experiments with the fol
 |min_samples_leaf|1|
 
 ### RobustPCA
+
 |Parameter|Value|
 |---|---|
 |max_iter|default|
 |random_state|42|
 
 ### S-H-ESD
+
 |Parameter|Value|
 |---|---|
 |max_anomalies|dataset contamination|
@@ -1712,6 +1764,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### SAND
+
 |Parameter|Value|
 |---|---|
 |anomaly_window_size|max anomaly length|
@@ -1722,6 +1775,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### SARIMA
+
 |Parameter|Value|
 |---|---|
 |train_window_size|500|
@@ -1734,6 +1788,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### Series2Graph
+
 |Parameter|Value|
 |---|---|
 |window_size|1.0 dataset period size|
@@ -1742,6 +1797,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### SR
+
 |Parameter|Value|
 |---|---|
 |mag_window_size|40|
@@ -1750,6 +1806,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### SR-CNN
+
 |Parameter|Value|
 |---|---|
 |window_size|1.5 dataset period size|
@@ -1765,6 +1822,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |early_stopping_patience|10|
 
 ### SSA
+
 |Parameter|Value|
 |---|---|
 |ep|3|
@@ -1774,6 +1832,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### STAMP
+
 |Parameter|Value|
 |---|---|
 |anomaly_window_size|max anomaly length|
@@ -1783,6 +1842,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### STOMP
+
 |Parameter|Value|
 |---|---|
 |anomaly_window_size|max anomaly length|
@@ -1792,6 +1852,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### Sub-Fast-MCD
+
 |Parameter|Value|
 |---|---|
 |store_precision|True|
@@ -1799,6 +1860,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### Sub-IF
+
 |Parameter|Value|
 |---|---|
 |window_size|1.0 dataset period size|
@@ -1811,6 +1873,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |n_jobs|1|
 
 ### Sub-LOF
+
 |Parameter|Value|
 |---|---|
 |window_size|1.0 dataset period size|
@@ -1821,6 +1884,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### TAnoGAN
+
 |Parameter|Value|
 |---|---|
 |epochs|500|
@@ -1836,6 +1900,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |iterations|25|
 
 ### TARZAN
+
 |Parameter|Value|
 |---|---|
 |random_state|42|
@@ -1843,6 +1908,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |alphabet_size|4|
 
 ### Telemanom
+
 |Parameter|Value|
 |---|---|
 |batch_size|64|
@@ -1861,6 +1927,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### Torsk
+
 |Parameter|Value|
 |---|---|
 |input_map_size|100|
@@ -1881,6 +1948,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### Triple ES
+
 |Parameter|Value|
 |---|---|
 |train_window_size|500|
@@ -1890,6 +1958,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### TSBitmap
+
 |Parameter|Value|
 |---|---|
 |feature_window_size|500|
@@ -1901,6 +1970,7 @@ After an independent parameter search, we conducted the experiments with the fol
 |random_state|42|
 
 ### VALMOD
+
 |Parameter|Value|
 |---|---|
 |min_anomaly_window_size|1.0 dataset period size|
