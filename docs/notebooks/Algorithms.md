@@ -1080,6 +1080,7 @@ More than half of the __71__ chosen algorithms had to be reimplemented by oursel
 After an independent parameter search, we conducted the experiments with the following parameters. Some parameters depend on data set properties.
 
 ### ARIMA
+
 |Parameter|Value|
 |---|---|
 |window_size|1.0 dataset period size|
