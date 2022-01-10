@@ -48,7 +48,7 @@ In addition, we give some further metadata about and insights into data, algorit
 - [Datasets Overview and Metadata](./notebooks/Datasets.html)
 - [Algorithms Overview and Metadata](./notebooks/Algorithms.html)
 - Detailed experimental evaluation results ... (tbd)
-  - on our synthetically generated datasets (GutenTAG)
+  - [on our synthetically generated datasets (GutenTAG)](./notebooks/GutenTAG-result-analysis.html)
   - on all the collected "real-world" datasets
   - (extra) on multivariate, synthetically generated datasets with correlation anomalies
 - [Case studies](./notebooks/Case-studies.html):
