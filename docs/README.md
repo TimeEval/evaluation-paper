@@ -49,13 +49,13 @@ In addition, we give some further metadata about and insights into data, algorit
 - [Algorithms Overview and Metadata](./notebooks/Algorithms.html)
 - Detailed experimental evaluation results ... (tbd)
   - [on our synthetically generated datasets (GutenTAG)](./notebooks/GutenTAG-result-analysis.html)
-  - on all the collected "real-world" datasets
-  - (extra) on multivariate, synthetically generated datasets with correlation anomalies
+  - [on all the collected "real-world" datasets](./notebooks/Benchmark-result-analysis.html)
+  <!--- (extra) on multivariate, synthetically generated datasets with correlation anomalies -->
 - [Case studies](./notebooks/Case-studies.html):
   - [Datasets with no anomalies](./notebooks/Case-studies.html#no-anomalies)
   - [Datasets with a high contamination](./notebooks/Case-studies.html#high-contamination)
-  - Large datasets (tbd)
   - [Parameter sensitivity](./notebooks/Case-studies.html#parameter-sensitivity)
+  <!--- Large datasets (tbd) -->
 
 ### Evaluation Metrics
 
