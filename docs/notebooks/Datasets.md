@@ -3,8 +3,14 @@ title: Datasets
 description: This page lists univariate and multivariate time series anomaly detection datasets used in the experimental evaluation paper.
 ---
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript" async></script>
+<script>
+  var require = {
+    enforceDefine: true,
+    waitSeconds: 30, // only give up loading a module after 30s (default: 7s)
+  };
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js" type="text/javascript"></script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 # Datasets
 
@@ -29837,4 +29843,3 @@ You can read more about the reasons of the exclusions in our paper.
   </tbody>
 </table>
 </div>
-

@@ -4,8 +4,14 @@ description: This page lists all algorithms with implementation and parametrizat
 
 ---
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js" type="text/javascript" async></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript" async></script>
+<script>
+  var require = {
+    enforceDefine: true,
+    waitSeconds: 30, // only give up loading a module after 30s (default: 7s)
+  };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js" type="text/javascript"></script>
 
 # Algorithms Overview and Metadata
 
@@ -1979,4 +1985,3 @@ After an independent parameter search, we conducted the experiments with the fol
 |exclusion_zone|0.5|
 |verbose|0|
 |random_state|42|
-
