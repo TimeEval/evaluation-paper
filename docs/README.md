@@ -85,6 +85,31 @@ The _Area under the Range Based Precision Recall Curve_ [^Tatbul2018Range] (AUC-
 
 -->
 
+## Key Insights
+
+The following section presents the key insights that we discovered throughout this study.
+
+### General Findings
+
+1. There is no one-size-fits-all solution in the set of currently available algorithms: A multivariate algorithm is necessary to detect multivariate anomalies (e.g., anomalies in the correlation of series), but a univariate algorithm is preferable for univariate data.
+2. Despite that supervised algorithms use additional information during training (labels for normal *and* anomalous points), they do not achieve superior results compared to semi-supervised or even unsupervised approaches.
+3. The most relevant scoring metric depends on the use case and what the results are expected to indicate.
+4. Every anomaly detection family can be effective and there is no clear winner. Furthermore, no single algorithm achieves perfect scores leaving much room for future work.
+5. Due to the lack of structure in chaotic time series, most algorithms struggle to find a suitable representation for normal behavior or cannot distinguish between normal and abnormal subsequences at all.
+6. Anomalies on periodic time series are easier to detect than on non-periodic time series.
+7. Anomaly detection on univariate time series is on average easier than on multivariate time series.
+8. An *extremum* seems to be the easiest anomaly type and a *trend* the hardest anomaly type.
+
+### Specific Findings
+
+1. The relatively high overall error susceptibility – despite our strong investment into each implementation – shows that every practical algorithm deployment needs careful testing; only few implementations, such as *DWTMLEAD*, *KNN*, and *Subsequence LOF*, actually appear to be both robust and effective.
+2. *Frequency* and *pattern-shift* anomalies clearly separate the algorithms in ones that can (mostly distance and forecasting families) and ones that cannot (mostly reconstruction and tree families) detect them.
+3. In summary, most reconstruction methods yielded rather bad AUC-ROC scores (around 0.5) and only some algorithms in this group, i.e., *EncDecAD* and *Donut*, can detect anomalies well across all characteristics. Forecasting and distance algorithms, on the contrary, yielded particularly good results and many of their representatives, such as *DeepAnT* and *Subsequence LOF*, are amongst the best performing algorithms in almost every characteristic. Finally, distance algorithms performed remarkably well on variance anomalies.
+4. Most supervised and semi-supervised algorithms are amongst the slowest algorithms in our evaluation and need on average 255 ms for one data point, which is largely due to their long training times. This observation confirms similar conclusions made in related work[^JacobEtAl2021Exathlon].
+5. Overall, neither the fastest algorithms nor the slowest algorithms delivered qualitatively good results. The algorithm with the clearly best cost/benefit ratio in our experiments is *DWTMLEAD* with an average AUC-ROC score of 83 % and an outstanding runtime of 2.2 ms per data point.
+6. Most implementations do not struggle with our 3 GB memory limit.
+
+
 ## Related Resources
 
 - Dataset download-links can be found on the [datasets-page](./notebooks/Datasets.html)
@@ -107,12 +132,13 @@ The _Area under the Range Based Precision Recall Curve_ [^Tatbul2018Range] (AUC-
 [^GuptaEtAl2014Outlier]: Gupta, Manish, Jing Gao, Charu C. Aggarwal, and Jiawei Han. "Outlier Detection for Temporal Data: A Survey." IEEE Transactions on Knowledge and Data Engineering (TKDE) 26, no. 9 (2014): 2250–67. https://doi.org/10.1109/TKDE.2013.184.
 [^HodgeAustin2004Survey]: Hodge, Victoria J., and Jim Austin. "A Survey of Outlier Detection Methodologies." Artificial Intelligence Review 22, no. 2 (2004): 85–126. https://doi.org/10.1007/s10462-004-4304-y.
 [^sklearn]: Pedregosa, F., G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, et al. “Scikit-Learn: Machine Learning in Python.” Journal of Machine Learning Research 12 (2011): 2825–2830.
-[^HanleyMcNeil1982AUCROC]: Hanley, James A, and Barbara J McNeil. “The Meaning and Use of the Area under a Receiver Operating Characteristic (ROC) Curve.” Radiology 143, no. 1 (1982): 29–36.
-[^Bradley1997AUCROC]: Bradley, Andrew P. “The Use of the Area under the ROC Curve in the Evaluation of Machine Learning Algorithms.” Pattern Recognition 30, no. 7 (1997): 1145–1159.
-[^Raghavan1989AUCPR]: Raghavan, Vijay, Peter Bollmann, and Gwang S Jung. “A Critical Investigation of Recall and Precision as Measures of Retrieval System Performance.” ACM Transactions on Information Systems (TOIS) 7, no. 3 (1989): 205–229.
+[^HanleyMcNeil1982AUCROC]: James A. Hanley, and Barbara J McNeil. “The Meaning and Use of the Area under a Receiver Operating Characteristic (ROC) Curve.” Radiology 143, no. 1 (1982): 29–36.
+[^Bradley1997AUCROC]: Andrew P. Bradley. “The Use of the Area under the ROC Curve in the Evaluation of Machine Learning Algorithms.” Pattern Recognition 30, no. 7 (1997): 1145–1159.
+[^Raghavan1989AUCPR]: Vijay Raghavan, Peter Bollmann, and Gwang S Jung. “A Critical Investigation of Recall and Precision as Measures of Retrieval System Performance.” ACM Transactions on Information Systems (TOIS) 7, no. 3 (1989): 205–229.
 [^Davis2006AUCPR]: Davis, Jesse, and Mark Goadrich. “The Relationship between Precision-Recall and ROC Curves.” In Proceedings of the 23rd International Conference on Machine Learning, 233–240, 2006.
 [^prts]: https://pypi.org/project/prts/
-[^Tatbul2018Range]: Tatbul, Nesime, Tae Jun Lee, Stan Zdonik, Mejbah Alam, and Justin Gottschlich. “Precision and Recall for Time Series.” ArXiv Preprint ArXiv:1803.03639, 2018.
+[^Tatbul2018Range]: Nesime Tatbul, Tae Jun Lee, Stan Zdonik, Mejbah Alam, and Justin Gottschlich. “Precision and Recall for Time Series.” ArXiv Preprint ArXiv:1803.03639, 2018.
+[^JacobEtAl2021Exathlon]: Vincent Jacob, Fei Song, Arnaud Stiegler, Bijan Rad, YanleiDiao, and Nesime Tatbul. 2021. Exathlon: A Benchmark forExplainable Anomaly Detection over Time Series.Proceed-ings of the VLDB Endowment (PVLDB), 14, 2613–2626.
 
 
 [paper]: # "paper download link pending"
