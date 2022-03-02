@@ -55,6 +55,7 @@ In addition, we give some further metadata about and insights into data, algorit
   - [Datasets with no anomalies](./notebooks/Case-studies.html#no-anomalies)
   - [Datasets with a high contamination](./notebooks/Case-studies.html#high-contamination)
   - [Parameter sensitivity](./notebooks/Case-studies.html#parameter-sensitivity)
+  - [Detecting anomalies of variable lengths](./notebooks/Detecting-Anomalies-of-Variable-Lengths.html)
   <!--- Large datasets (tbd) -->
 
 ### Evaluation Metrics

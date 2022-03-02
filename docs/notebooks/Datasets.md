@@ -21,7 +21,7 @@ For the later, we included datasets with categorical labels, where a single clas
 One example for this is an ECG signal with beat annotations, where most beats are annotated as normal beats, but some beats are premature or superventricular heart beats.
 The premature or superventricular heart beats can then be labelled as anomalous while the rest of the time series is normal behavior.
 
-Overall, we collected 1722 datasets and grouped them into 24 different dataset collection.
+Overall, we collected 1354 datasets and grouped them into 24 different dataset collection.
 The collections group datasets from a common source together.
 The following table shows the dataset collections and their metadata:
 
@@ -127,8 +127,8 @@ The following table shows the dataset collections and their metadata:
       <th>GutenTAG</th>
       <td>synthetic</td>
       <td>uni/multi</td>
-      <td>u/s/m</td>
-      <td>576</td>
+      <td>u/m</td>
+      <td>193</td>
       <td>10000</td>
       <td>2</td>
       <td>3</td>
@@ -232,6 +232,16 @@ The following table shows the dataset collections and their metadata:
       <td>8070</td>
       <td>1</td>
       <td>2</td>
+    </tr>
+    <tr>
+      <th>NormA</th>
+      <td>real/synthetic</td>
+      <td>uni</td>
+      <td>u</td>
+      <td>21</td>
+      <td>83644</td>
+      <td>1</td>
+      <td>41</td>
     </tr>
     <tr>
       <th>OPPORTUNITY</th>
@@ -338,6 +348,7 @@ The following table lists the sources of our datasets and provides the links to 
 | NAB         | doi:[10.1016/j.neucom.2017.04.070](https://doi.org/10.1016/j.neucom.2017.04.070) | [Benchmark Website (Github)](https://github.com/htm-community/NAB) | [⬇](https://owncloud.hpi.de/s/pgJf8HsStreVmhR/download) (2MB; the same [AGPL-license](https://github.com/htm-community/NAB/blob/master/LICENSE.txt) applies) |
 | NASA-MSL    | doi:[10.1145/3219819.3219845](https://doi.org/10.1145/3219819.3219845) | [Paper Website (Github)](https://github.com/khundman/telemanom) | [⬇](https://owncloud.hpi.de/s/GQi5Fy7fPyh1Rz8/download) (<1MB) |
 | NASA-SMAP   | doi:[10.1145/3219819.3219845](https://doi.org/10.1145/3219819.3219845) | [Paper Website (Github)](https://github.com/khundman/telemanom) | [⬇](https://owncloud.hpi.de/s/FYl8kRUBvla0IHx/download) (2MB) |
+| NormA       | doi:[10.1145/3055366.3055375](https://doi.org/10.1007/s00778-021-00655-8) | [Paper Website](https://helios2.mi.parisdescartes.fr/~themisp/norma/) | [⬇](https://owncloud.hpi.de/s/RXSvWBBtLgKymTr/download) (15MB) |
 | OPPORTUNITY | doi:[10.1109/INSS.2010.5573462](https://doi.org/10.1109/INSS.2010.5573462) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/URL+Reputation) | [⬇](https://owncloud.hpi.de/s/JJdepYA1zMdAsCa/download) (204MB) |
 | Occupancy   | doi:[10.1016/j.enbuild.2015.11.071](https://doi.org/10.1016/j.enbuild.2015.11.071) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+) | [⬇](https://owncloud.hpi.de/s/wrIxS1BiaX8AGyC/download) (<1MB) |
 | SMD         | doi:[10.1145/3292500.3330672](https://doi.org/10.1145/3292500.3330672)| [Paper Website (Github)](https://github.com/NetManAIOps/OmniAnomaly) | [⬇](https://owncloud.hpi.de/s/Ea7rsjmDErZ3QCN/download) (99MB) |
@@ -1176,7 +1187,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.633289e+01</td>
       <td>no trend</td>
       <td>stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>2_1_100000_60-20*</th>
@@ -1193,7 +1204,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.453789e+08</td>
       <td>no trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>2_1_100000_60-22*</th>
@@ -1210,7 +1221,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.453789e+08</td>
       <td>no trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>4_1_100000_61-27*</th>
@@ -1227,7 +1238,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>2.224599e+08</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>4_1_100000_61-28*</th>
@@ -1244,7 +1255,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>2.224599e+08</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>4_1_100000_61-29*</th>
@@ -1261,7 +1272,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>2.224599e+08</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>4_1_100000_61-30*</th>
@@ -1278,7 +1289,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>2.224599e+08</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>4_1_100000_61-32*</th>
@@ -1295,7 +1306,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>2.224599e+08</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_63-33*</th>
@@ -1312,7 +1323,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.693216e+08</td>
       <td>no trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_63-34*</th>
@@ -1329,7 +1340,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.693216e+08</td>
       <td>no trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_63-35*</th>
@@ -1346,7 +1357,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.693216e+08</td>
       <td>no trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_63-36*</th>
@@ -1363,7 +1374,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.693216e+08</td>
       <td>no trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_63-37*</th>
@@ -1380,7 +1391,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.693216e+08</td>
       <td>no trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_63-40*</th>
@@ -1397,7 +1408,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.693216e+08</td>
       <td>no trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_64-33*</th>
@@ -1414,7 +1425,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>9.891458e+07</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_64-34*</th>
@@ -1431,7 +1442,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>9.891458e+07</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_64-35*</th>
@@ -1448,7 +1459,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>9.891458e+07</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_64-36*</th>
@@ -1465,7 +1476,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>9.891458e+07</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_64-37*</th>
@@ -1482,7 +1493,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>9.891458e+07</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_64-40*</th>
@@ -1499,7 +1510,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>9.891458e+07</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">supervised</th>
@@ -1517,7 +1528,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.693216e+08</td>
       <td>no trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_100000_64-63</th>
@@ -1534,7 +1545,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>9.891458e+07</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th rowspan="15" valign="top">unsupervised</th>
@@ -1552,7 +1563,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>4.479414e+09</td>
       <td>kubic trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>10.0</td>
     </tr>
     <tr>
       <th>10_3_1000000_75*</th>
@@ -1569,7 +1580,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.787138e+05</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>10.0</td>
     </tr>
     <tr>
       <th>10_4_1000000_79*</th>
@@ -1586,7 +1597,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>2.716630e+02</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>2_2_200000_69*</th>
@@ -1603,7 +1614,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>2.136342e+10</td>
       <td>kubic trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>3_2_1000000_71*</th>
@@ -1620,7 +1631,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>2.986543e+09</td>
       <td>kubic trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>3_2_500000_70*</th>
@@ -1637,7 +1648,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>7.031951e+09</td>
       <td>kubic trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_1_500000_62*</th>
@@ -1654,7 +1665,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>2.041997e+10</td>
       <td>no trend</td>
       <td>not_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>5_2_1000000_72*</th>
@@ -1671,7 +1682,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>7.503620e+09</td>
       <td>kubic trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>6_1_500000_65*</th>
@@ -1705,7 +1716,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>9.862455e+06</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>8_3_200000_73*</th>
@@ -1722,7 +1733,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>7.218720e+04</td>
       <td>no trend</td>
       <td>difference_stationary</td>
-      <td>NaN</td>
+      <td>10.0</td>
     </tr>
     <tr>
       <th>8_4_1000000_77*</th>
@@ -1739,7 +1750,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.619839e+01</td>
       <td>no trend</td>
       <td>stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>9_2_1000000_66*</th>
@@ -1756,7 +1767,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>3.099851e+09</td>
       <td>kubic trend</td>
       <td>trend_stationary</td>
-      <td>NaN</td>
+      <td>10.0</td>
     </tr>
     <tr>
       <th>9_3_500000_74*</th>
@@ -1773,7 +1784,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>1.967543e+05</td>
       <td>no trend</td>
       <td>not_stationary</td>
-      <td>NaN</td>
+      <td>10.0</td>
     </tr>
     <tr>
       <th>9_4_1000000_78*</th>
@@ -1790,7 +1801,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>5.612242e+02</td>
       <td>no trend</td>
       <td>stationary</td>
-      <td>NaN</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th rowspan="48" valign="top">GHL</th>
@@ -2632,862 +2643,10 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th rowspan="579" valign="top">GutenTAG</th>
-      <th rowspan="75" valign="top">multivariate</th>
-      <th rowspan="25" valign="top">semi-supervised</th>
-      <th>cbf-channels-all-of-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>3</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.215392e+01</td>
-      <td>2.868894e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-channels-single-of-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>10</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.252160e+01</td>
-      <td>2.979774e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-channels-single-of-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>2</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.235969e+01</td>
-      <td>2.835414e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-channels-single-of-20.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>20</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.254367e+01</td>
-      <td>3.212903e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-channels-single-of-5.semi-supervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>5</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.221224e+01</td>
-      <td>3.072889e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>ecg-channels-all-of-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>3</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.666091e-01</td>
-      <td>1.753390e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-channels-single-of-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>10</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.666276e-01</td>
-      <td>1.758762e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-channels-single-of-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>2</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.732913e-01</td>
-      <td>1.757597e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-channels-single-of-20.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>20</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.668049e-01</td>
-      <td>1.759442e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-channels-single-of-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>5</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.667702e-01</td>
-      <td>1.758810e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>poly-channels-all-of-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>3</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.456876e+00</td>
-      <td>2.371558e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-channels-single-of-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>10</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.466391e+00</td>
-      <td>2.359913e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-channels-single-of-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>2</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.462367e+00</td>
-      <td>2.363150e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-channels-single-of-20.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>20</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.466508e+00</td>
-      <td>2.359668e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-channels-single-of-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>5</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.465067e+00</td>
-      <td>2.361379e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-channels-all-of-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>3</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.840291e+00</td>
-      <td>1.437690e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-channels-single-of-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>10</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.900263e+00</td>
-      <td>1.372910e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-channels-single-of-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>2</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.665916e+00</td>
-      <td>1.523993e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-channels-single-of-20.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>20</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.814668e+00</td>
-      <td>1.525749e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-channels-single-of-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>5</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.783255e+00</td>
-      <td>1.591335e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>sinus-channels-all-of-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>3</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299775e+00</td>
-      <td>2.506668e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-channels-single-of-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>10</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299931e+00</td>
-      <td>2.518345e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-channels-single-of-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>2</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299980e+00</td>
-      <td>2.519433e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-channels-single-of-20.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>20</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299893e+00</td>
-      <td>2.519710e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-channels-single-of-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>5</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299816e+00</td>
-      <td>2.521333e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th rowspan="25" valign="top">supervised</th>
-      <th>cbf-channels-all-of-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>3</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.215392e+01</td>
-      <td>2.868894e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-channels-single-of-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>10</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.252160e+01</td>
-      <td>2.979774e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-channels-single-of-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>2</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.235969e+01</td>
-      <td>2.835414e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-channels-single-of-20.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>20</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.254367e+01</td>
-      <td>3.212903e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-channels-single-of-5.supervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>5</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.221224e+01</td>
-      <td>3.072889e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>ecg-channels-all-of-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>3</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.666091e-01</td>
-      <td>1.753390e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-channels-single-of-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>10</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.666276e-01</td>
-      <td>1.758762e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-channels-single-of-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>2</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.732913e-01</td>
-      <td>1.757597e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-channels-single-of-20.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>20</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.668049e-01</td>
-      <td>1.759442e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-channels-single-of-5.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>5</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.667702e-01</td>
-      <td>1.758810e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>poly-channels-all-of-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>3</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.456876e+00</td>
-      <td>2.371558e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-channels-single-of-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>10</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.466391e+00</td>
-      <td>2.359913e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-channels-single-of-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>2</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.462367e+00</td>
-      <td>2.363150e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-channels-single-of-20.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>20</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.466508e+00</td>
-      <td>2.359668e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-channels-single-of-5.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>5</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.465067e+00</td>
-      <td>2.361379e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-channels-all-of-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>3</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.840291e+00</td>
-      <td>1.437690e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-channels-single-of-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>10</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.900263e+00</td>
-      <td>1.372910e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-channels-single-of-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>2</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.665916e+00</td>
-      <td>1.523993e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-channels-single-of-20.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>20</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.814668e+00</td>
-      <td>1.525749e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-channels-single-of-5.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>5</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.783255e+00</td>
-      <td>1.591335e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>sinus-channels-all-of-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>3</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299775e+00</td>
-      <td>2.506668e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-channels-single-of-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>10</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299931e+00</td>
-      <td>2.518345e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-channels-single-of-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>2</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299980e+00</td>
-      <td>2.519433e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-channels-single-of-20.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>20</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299893e+00</td>
-      <td>2.519710e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-channels-single-of-5.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>5</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299816e+00</td>
-      <td>2.521333e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
+      <th rowspan="193" valign="top">GutenTAG</th>
+      <th rowspan="25" valign="top">multivariate</th>
       <th rowspan="25" valign="top">unsupervised</th>
-      <th>cbf-channels-all-of-3.unsupervised</th>
+      <th>cbf-channels-all-of-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3504,7 +2663,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-channels-single-of-10.unsupervised</th>
+      <th>cbf-channels-single-of-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3521,7 +2680,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-channels-single-of-2.unsupervised</th>
+      <th>cbf-channels-single-of-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3538,7 +2697,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-channels-single-of-20.unsupervised</th>
+      <th>cbf-channels-single-of-20</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3555,7 +2714,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-channels-single-of-5.unsupervised*</th>
+      <th>cbf-channels-single-of-5*</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3572,7 +2731,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>ecg-channels-all-of-3.unsupervised</th>
+      <th>ecg-channels-all-of-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3589,7 +2748,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-channels-single-of-10.unsupervised</th>
+      <th>ecg-channels-single-of-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3606,7 +2765,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-channels-single-of-2.unsupervised</th>
+      <th>ecg-channels-single-of-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3623,7 +2782,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-channels-single-of-20.unsupervised</th>
+      <th>ecg-channels-single-of-20</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3640,7 +2799,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-channels-single-of-5.unsupervised</th>
+      <th>ecg-channels-single-of-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3657,7 +2816,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>poly-channels-all-of-3.unsupervised</th>
+      <th>poly-channels-all-of-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3674,7 +2833,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-channels-single-of-10.unsupervised</th>
+      <th>poly-channels-single-of-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3691,7 +2850,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-channels-single-of-2.unsupervised</th>
+      <th>poly-channels-single-of-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3708,7 +2867,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-channels-single-of-20.unsupervised</th>
+      <th>poly-channels-single-of-20</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3725,7 +2884,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-channels-single-of-5.unsupervised</th>
+      <th>poly-channels-single-of-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3742,7 +2901,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-channels-all-of-3.unsupervised</th>
+      <th>rw-channels-all-of-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3759,7 +2918,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-channels-single-of-10.unsupervised</th>
+      <th>rw-channels-single-of-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3776,7 +2935,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-channels-single-of-2.unsupervised</th>
+      <th>rw-channels-single-of-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3793,7 +2952,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-channels-single-of-20.unsupervised</th>
+      <th>rw-channels-single-of-20</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3810,7 +2969,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-channels-single-of-5.unsupervised</th>
+      <th>rw-channels-single-of-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3827,7 +2986,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>sinus-channels-all-of-3.unsupervised</th>
+      <th>sinus-channels-all-of-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3844,7 +3003,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>8.0</td>
     </tr>
     <tr>
-      <th>sinus-channels-single-of-10.unsupervised</th>
+      <th>sinus-channels-single-of-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3861,7 +3020,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>8.0</td>
     </tr>
     <tr>
-      <th>sinus-channels-single-of-2.unsupervised</th>
+      <th>sinus-channels-single-of-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3878,7 +3037,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>8.0</td>
     </tr>
     <tr>
-      <th>sinus-channels-single-of-20.unsupervised</th>
+      <th>sinus-channels-single-of-20</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3895,7 +3054,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>8.0</td>
     </tr>
     <tr>
-      <th>sinus-channels-single-of-5.unsupervised</th>
+      <th>sinus-channels-single-of-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -3912,1760 +3071,9 @@ You can read more about the reasons of the exclusions in our paper.
       <td>8.0</td>
     </tr>
     <tr>
-      <th rowspan="504" valign="top">univariate</th>
-      <th rowspan="168" valign="top">semi-supervised</th>
-      <th>cbf-combined-diff-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.240198e+01</td>
-      <td>3.567649e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-combined-diff-2.semi-supervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>200</td>
-      <td>1.240247e+01</td>
-      <td>2.797340e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-combined-diff-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010500</td>
-      <td>6</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>100</td>
-      <td>-3.046444e+00</td>
-      <td>6.028187e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.224626e+01</td>
-      <td>3.476618e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-2.semi-supervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010100</td>
-      <td>2</td>
-      <td>1</td>
-      <td>50.5</td>
-      <td>100</td>
-      <td>1.234086e+01</td>
-      <td>3.125498e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020100</td>
-      <td>3</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.257913e+01</td>
-      <td>3.356754e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-4.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030100</td>
-      <td>4</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.232596e+01</td>
-      <td>3.326795e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-5.semi-supervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.040100</td>
-      <td>5</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.191076e+01</td>
-      <td>3.715214e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-6.semi-supervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050100</td>
-      <td>6</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.190434e+01</td>
-      <td>3.340090e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-7.semi-supervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060100</td>
-      <td>7</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.262165e+01</td>
-      <td>3.375320e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-2.888471e+00</td>
-      <td>5.913124e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.001000</td>
-      <td>1</td>
-      <td>10</td>
-      <td>10.0</td>
-      <td>10</td>
-      <td>-2.988651e+00</td>
-      <td>5.914177e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-100.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.040956e+00</td>
-      <td>6.049999e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-1000.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>1</td>
-      <td>1000</td>
-      <td>1000.0</td>
-      <td>1000</td>
-      <td>-2.915676e+00</td>
-      <td>6.195275e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-50.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.005000</td>
-      <td>1</td>
-      <td>50</td>
-      <td>50.0</td>
-      <td>50</td>
-      <td>-3.073472e+00</td>
-      <td>5.852373e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-500.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>1</td>
-      <td>500</td>
-      <td>500.0</td>
-      <td>500</td>
-      <td>-3.018779e+00</td>
-      <td>6.218435e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-position-beginning.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.464529e+01</td>
-      <td>3.331868e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-position-end.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.515810e+01</td>
-      <td>3.267085e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-position-middle.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.457857e+01</td>
-      <td>3.760193e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-same-count-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.250274e+01</td>
-      <td>2.811671e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-same-count-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>10</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.194778e+01</td>
-      <td>2.764199e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-same-count-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.240711e+01</td>
-      <td>2.898653e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-same-count-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>5</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.246062e+01</td>
-      <td>3.481696e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-trend-linear.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-4.796003e+00</td>
-      <td>6.277594e-01</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-trend-quadratic.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.486138e+00</td>
-      <td>2.977317e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-trend-sinus.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.094487e+00</td>
-      <td>7.660974e-01</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-amplitude.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.945503e+00</td>
-      <td>5.651049e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-extremum.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-2.994885e+00</td>
-      <td>5.924835e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-mean.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.997496e+00</td>
-      <td>6.062412e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-pattern.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.953815e+00</td>
-      <td>6.144185e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-platform.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.006968e+00</td>
-      <td>6.210990e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-trend.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.835973e+00</td>
-      <td>5.709965e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-variance.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.999445e+00</td>
-      <td>6.053116e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>ecg-combined-diff-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.139145e+00</td>
-      <td>5.542083e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-combined-diff-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>200</td>
-      <td>5.052937e-01</td>
-      <td>1.759627e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-combined-diff-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010500</td>
-      <td>6</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>100</td>
-      <td>4.737141e-01</td>
-      <td>1.761337e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.657726e-01</td>
-      <td>1.755754e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.702537e-01</td>
-      <td>1.754948e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.638062e-01</td>
-      <td>1.754721e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-4.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030100</td>
-      <td>4</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.729081e-01</td>
-      <td>1.756005e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.040100</td>
-      <td>5</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.673643e-01</td>
-      <td>1.760142e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-6.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050100</td>
-      <td>6</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.798310e-01</td>
-      <td>1.762061e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-7.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060100</td>
-      <td>7</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.713740e-01</td>
-      <td>1.752084e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-8.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070100</td>
-      <td>8</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.771029e-01</td>
-      <td>1.746051e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-9.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.080100</td>
-      <td>9</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.763818e-01</td>
-      <td>1.749182e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>4.659142e-01</td>
-      <td>1.765687e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.001000</td>
-      <td>1</td>
-      <td>10</td>
-      <td>10.0</td>
-      <td>10</td>
-      <td>4.620226e-01</td>
-      <td>1.760028e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-100.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.631243e-01</td>
-      <td>1.760071e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-1000.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>1</td>
-      <td>1000</td>
-      <td>1000.0</td>
-      <td>1000</td>
-      <td>4.643807e-01</td>
-      <td>1.762169e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-50.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.005000</td>
-      <td>1</td>
-      <td>50</td>
-      <td>50.0</td>
-      <td>50</td>
-      <td>4.637835e-01</td>
-      <td>1.760285e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-500.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>1</td>
-      <td>500</td>
-      <td>500.0</td>
-      <td>500</td>
-      <td>4.640575e-01</td>
-      <td>1.759338e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-noise-00%.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.134612e+00</td>
-      <td>5.538385e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-noise-01%.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.134572e+00</td>
-      <td>5.538188e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-noise-10%.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.134201e+00</td>
-      <td>5.538242e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-noise-30%.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.132331e+00</td>
-      <td>5.546391e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-noise-50%.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.143509e+00</td>
-      <td>5.555578e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-same-count-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.683547e-01</td>
-      <td>1.758442e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-same-count-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>10</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.733278e-01</td>
-      <td>1.758622e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-same-count-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.682118e-01</td>
-      <td>1.758351e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-same-count-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>5</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.622034e-01</td>
-      <td>1.758107e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-trend-linear.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.675350e-01</td>
-      <td>2.102365e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-trend-quadratic.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>2.000281e+00</td>
-      <td>3.456423e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-trend-sinus.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.624907e-01</td>
-      <td>1.796117e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-amplitude.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.757222e-01</td>
-      <td>1.778670e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-extremum.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>4.702817e-01</td>
-      <td>1.769509e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-frequency.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.759311e-01</td>
-      <td>1.758275e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-mean.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.870311e-01</td>
-      <td>1.761964e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-pattern-shift.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.758599e-01</td>
-      <td>1.758390e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-pattern.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.673664e-01</td>
-      <td>1.758730e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-platform.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.631515e-01</td>
-      <td>1.750270e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-trend.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>6.314838e-01</td>
-      <td>1.770236e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-variance.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.654966e-01</td>
-      <td>1.758129e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>poly-combined-diff-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.456516e+00</td>
-      <td>2.351260e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-combined-diff-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.377771e+00</td>
-      <td>2.322751e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-combined-diff-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010500</td>
-      <td>6</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>100</td>
-      <td>-9.331116e+00</td>
-      <td>1.994025e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-diff-count-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-3.466385e+00</td>
-      <td>2.363279e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-diff-count-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010100</td>
-      <td>2</td>
-      <td>1</td>
-      <td>50.5</td>
-      <td>100</td>
-      <td>-3.465572e+00</td>
-      <td>2.364463e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-diff-count-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020100</td>
-      <td>3</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.455633e+00</td>
-      <td>2.375474e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-diff-count-4.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030100</td>
-      <td>4</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.380622e+00</td>
-      <td>2.287079e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-diff-count-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.040100</td>
-      <td>5</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.451048e+00</td>
-      <td>2.374834e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-9.332349e+00</td>
-      <td>1.994932e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.001000</td>
-      <td>1</td>
-      <td>10</td>
-      <td>10.0</td>
-      <td>10</td>
-      <td>-9.332729e+00</td>
-      <td>1.993839e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-100.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.333006e+00</td>
-      <td>1.994483e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-1000.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>1</td>
-      <td>1000</td>
-      <td>1000.0</td>
-      <td>1000</td>
-      <td>-9.333565e+00</td>
-      <td>1.996746e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-50.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.005000</td>
-      <td>1</td>
-      <td>50</td>
-      <td>50.0</td>
-      <td>50</td>
-      <td>-9.332697e+00</td>
-      <td>1.995173e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-500.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>1</td>
-      <td>500</td>
-      <td>500.0</td>
-      <td>500</td>
-      <td>-9.333210e+00</td>
-      <td>1.995247e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-same-count-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.467594e+00</td>
-      <td>2.359062e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-same-count-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>10</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.466491e+00</td>
-      <td>2.362213e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-same-count-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.467075e+00</td>
-      <td>2.359257e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-same-count-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>5</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.466381e+00</td>
-      <td>2.360412e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-trend-linear.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.113351e+01</td>
-      <td>2.063376e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-trend-quadratic.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-7.800156e+00</td>
-      <td>4.088125e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-trend-sinus.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.333263e+00</td>
-      <td>2.041951e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-type-extremum.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-9.333491e+00</td>
-      <td>1.994318e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-type-mean.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.322606e+00</td>
-      <td>2.001808e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-type-platform.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.260967e+00</td>
-      <td>2.123234e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-type-trend.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.153068e+00</td>
-      <td>2.150960e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-type-variance.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.332443e+00</td>
-      <td>1.994118e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-combined-diff-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.054928e+00</td>
-      <td>1.409187e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-combined-diff-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>200</td>
-      <td>-1.971245e+00</td>
-      <td>1.571229e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-combined-diff-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010500</td>
-      <td>6</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>100</td>
-      <td>-1.538201e-01</td>
-      <td>4.910584e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-2.587796e+00</td>
-      <td>1.163683e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010100</td>
-      <td>2</td>
-      <td>1</td>
-      <td>50.5</td>
-      <td>100</td>
-      <td>-1.328535e+00</td>
-      <td>1.569975e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-3.semi-supervised</th>
+      <th rowspan="168" valign="top">univariate</th>
+      <th>semi-supervised</th>
+      <th>rw-diff-count-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -5682,1096 +3090,8 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-diff-count-4.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030100</td>
-      <td>4</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.681904e+00</td>
-      <td>1.170001e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.040100</td>
-      <td>5</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.997902e+00</td>
-      <td>1.439437e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-6.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050100</td>
-      <td>6</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.424672e+00</td>
-      <td>1.351613e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>2.191296e-01</td>
-      <td>5.302186e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.001000</td>
-      <td>1</td>
-      <td>10</td>
-      <td>10.0</td>
-      <td>10</td>
-      <td>-1.178202e-01</td>
-      <td>5.195197e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-100.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>2.063539e-02</td>
-      <td>5.217774e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-1000.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>1</td>
-      <td>1000</td>
-      <td>1000.0</td>
-      <td>1000</td>
-      <td>4.259328e-02</td>
-      <td>5.762021e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-50.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.005000</td>
-      <td>1</td>
-      <td>50</td>
-      <td>50.0</td>
-      <td>50</td>
-      <td>1.058960e-01</td>
-      <td>4.856826e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-500.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>1</td>
-      <td>500</td>
-      <td>500.0</td>
-      <td>500</td>
-      <td>-1.751243e-02</td>
-      <td>6.033689e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-same-count-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.775352e+00</td>
-      <td>1.363101e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-same-count-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>10</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.012584e+00</td>
-      <td>1.665093e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-same-count-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.810225e+00</td>
-      <td>1.579784e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-same-count-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>5</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.914281e+00</td>
-      <td>1.492404e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-trend-linear.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.837025e+00</td>
-      <td>4.673160e-01</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-trend-quadratic.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.490580e+00</td>
-      <td>3.051704e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-trend-sinus.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-7.769164e-02</td>
-      <td>6.954356e-01</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-amplitude.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>2.067071e-01</td>
-      <td>5.316887e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-extremum.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>1.723682e-01</td>
-      <td>4.219626e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-mean.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>2.010571e-01</td>
-      <td>5.638765e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-platform.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>3.672204e-02</td>
-      <td>5.377901e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-trend.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.043994e-01</td>
-      <td>7.362283e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-variance.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.373060e-04</td>
-      <td>4.787262e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>sinus-combined-diff-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.999183e+00</td>
-      <td>1.269927e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-combined-diff-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>200</td>
-      <td>1.334635e+00</td>
-      <td>2.572375e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-combined-diff-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010500</td>
-      <td>6</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>100</td>
-      <td>1.229521e-03</td>
-      <td>7.091738e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.997098e+00</td>
-      <td>1.256075e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.000067e+00</td>
-      <td>1.271035e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-3.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.001757e+00</td>
-      <td>1.272226e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-4.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030100</td>
-      <td>4</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.998432e+00</td>
-      <td>1.267207e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.040100</td>
-      <td>5</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.001504e+00</td>
-      <td>1.273984e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-6.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050100</td>
-      <td>6</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.986455e+00</td>
-      <td>1.277278e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-7.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060100</td>
-      <td>7</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.992061e+00</td>
-      <td>1.270969e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-8.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070100</td>
-      <td>8</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.987175e+00</td>
-      <td>1.263559e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-9.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.080100</td>
-      <td>9</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.990481e+00</td>
-      <td>1.269041e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>5.643245e-04</td>
-      <td>7.093110e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.001000</td>
-      <td>1</td>
-      <td>10</td>
-      <td>10.0</td>
-      <td>10</td>
-      <td>-1.186651e-04</td>
-      <td>7.088966e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-100.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.369302e-04</td>
-      <td>7.097400e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-1000.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>1</td>
-      <td>1000</td>
-      <td>1000.0</td>
-      <td>1000</td>
-      <td>1.239242e-03</td>
-      <td>7.132603e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-50.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.005000</td>
-      <td>1</td>
-      <td>50</td>
-      <td>50.0</td>
-      <td>50</td>
-      <td>-5.507567e-04</td>
-      <td>7.090734e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-500.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>1</td>
-      <td>500</td>
-      <td>500.0</td>
-      <td>500</td>
-      <td>-2.426485e-04</td>
-      <td>7.136283e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-noise-00%.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.446906e-08</td>
-      <td>7.035272e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-noise-01%.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.649894e-04</td>
-      <td>7.036797e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-noise-10%.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.386891e-03</td>
-      <td>7.105116e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-noise-30%.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.447817e-03</td>
-      <td>7.645662e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-noise-50%.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.516226e-03</td>
-      <td>8.745272e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-position-beginning.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.221007e-02</td>
-      <td>1.468908e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-position-end.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.249239e-02</td>
-      <td>1.472230e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-position-middle.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>6.391571e-03</td>
-      <td>1.474999e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-same-count-1.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.300417e+00</td>
-      <td>2.527405e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-same-count-10.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>10</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299586e+00</td>
-      <td>2.546901e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-same-count-2.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299644e+00</td>
-      <td>2.518167e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-same-count-5.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>5</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299711e+00</td>
-      <td>2.540003e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-trend-linear.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.799704e+00</td>
-      <td>1.260917e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-trend-quadratic.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-4.664939e-01</td>
-      <td>3.238132e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-trend-sinus.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.999942e+00</td>
-      <td>1.306591e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-amplitude.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>3.793412e-04</td>
-      <td>7.173056e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-extremum.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>4.477500e-04</td>
-      <td>7.093208e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-frequency.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>7.137565e-04</td>
-      <td>7.089652e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-mean.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.953375e-03</td>
-      <td>7.163786e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-pattern-shift.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.138656e-03</td>
-      <td>7.083178e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-pattern.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>3.246111e-04</td>
-      <td>7.100492e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-platform.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-5.827368e-04</td>
-      <td>7.044679e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-trend.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>2.508092e-01</td>
-      <td>7.348699e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-variance.semi-supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.675951e-04</td>
-      <td>7.088741e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th rowspan="168" valign="top">supervised</th>
-      <th>cbf-combined-diff-1.supervised</th>
+      <th rowspan="167" valign="top">unsupervised</th>
+      <th>cbf-combined-diff-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6788,7 +3108,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-combined-diff-2.supervised*</th>
+      <th>cbf-combined-diff-2*</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6805,7 +3125,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-combined-diff-3.supervised</th>
+      <th>cbf-combined-diff-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6822,7 +3142,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-diff-count-1.supervised</th>
+      <th>cbf-diff-count-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6839,7 +3159,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-diff-count-2.supervised*</th>
+      <th>cbf-diff-count-2*</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6856,7 +3176,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-diff-count-3.supervised</th>
+      <th>cbf-diff-count-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6873,7 +3193,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-diff-count-4.supervised</th>
+      <th>cbf-diff-count-4</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6890,7 +3210,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-diff-count-5.supervised*</th>
+      <th>cbf-diff-count-5*</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6907,7 +3227,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-diff-count-6.supervised*</th>
+      <th>cbf-diff-count-6*</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6924,7 +3244,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-diff-count-7.supervised*</th>
+      <th>cbf-diff-count-7*</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6941,7 +3261,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-length-1.supervised</th>
+      <th>cbf-length-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6958,7 +3278,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-length-10.supervised</th>
+      <th>cbf-length-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6975,7 +3295,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-length-100.supervised</th>
+      <th>cbf-length-100</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -6992,7 +3312,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-length-1000.supervised</th>
+      <th>cbf-length-1000</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7009,7 +3329,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-length-50.supervised</th>
+      <th>cbf-length-50</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7026,7 +3346,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-length-500.supervised</th>
+      <th>cbf-length-500</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7043,7 +3363,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-position-beginning.supervised</th>
+      <th>cbf-position-beginning</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7060,7 +3380,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-position-end.supervised</th>
+      <th>cbf-position-end</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7077,7 +3397,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-position-middle.supervised</th>
+      <th>cbf-position-middle</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7094,7 +3414,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-same-count-1.supervised</th>
+      <th>cbf-same-count-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7111,7 +3431,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-same-count-10.supervised</th>
+      <th>cbf-same-count-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7128,7 +3448,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-same-count-2.supervised</th>
+      <th>cbf-same-count-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7145,7 +3465,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-same-count-5.supervised</th>
+      <th>cbf-same-count-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7162,7 +3482,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-trend-linear.supervised</th>
+      <th>cbf-trend-linear</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7179,7 +3499,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-trend-quadratic.supervised</th>
+      <th>cbf-trend-quadratic</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7196,7 +3516,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-trend-sinus.supervised</th>
+      <th>cbf-trend-sinus</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7213,7 +3533,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-type-amplitude.supervised</th>
+      <th>cbf-type-amplitude</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7230,7 +3550,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-type-extremum.supervised</th>
+      <th>cbf-type-extremum</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7247,7 +3567,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-type-mean.supervised</th>
+      <th>cbf-type-mean</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7264,7 +3584,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-type-pattern.supervised</th>
+      <th>cbf-type-pattern</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7281,7 +3601,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-type-platform.supervised</th>
+      <th>cbf-type-platform</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7298,7 +3618,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-type-trend.supervised</th>
+      <th>cbf-type-trend</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7315,7 +3635,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>cbf-type-variance.supervised</th>
+      <th>cbf-type-variance</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7332,7 +3652,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>ecg-combined-diff-1.supervised</th>
+      <th>ecg-combined-diff-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7349,7 +3669,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>100.0</td>
     </tr>
     <tr>
-      <th>ecg-combined-diff-2.supervised</th>
+      <th>ecg-combined-diff-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7366,7 +3686,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-combined-diff-3.supervised</th>
+      <th>ecg-combined-diff-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7383,7 +3703,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-diff-count-1.supervised</th>
+      <th>ecg-diff-count-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7400,7 +3720,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-diff-count-2.supervised</th>
+      <th>ecg-diff-count-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7417,7 +3737,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-diff-count-3.supervised</th>
+      <th>ecg-diff-count-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7434,7 +3754,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-diff-count-4.supervised</th>
+      <th>ecg-diff-count-4</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7451,7 +3771,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-diff-count-5.supervised</th>
+      <th>ecg-diff-count-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7468,7 +3788,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-diff-count-6.supervised</th>
+      <th>ecg-diff-count-6</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7485,7 +3805,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-diff-count-7.supervised</th>
+      <th>ecg-diff-count-7</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7502,7 +3822,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-diff-count-8.supervised</th>
+      <th>ecg-diff-count-8</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7519,7 +3839,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-diff-count-9.supervised</th>
+      <th>ecg-diff-count-9</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7536,7 +3856,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-length-1.supervised</th>
+      <th>ecg-length-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7553,7 +3873,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-length-10.supervised</th>
+      <th>ecg-length-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7570,7 +3890,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-length-100.supervised</th>
+      <th>ecg-length-100</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7587,7 +3907,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-length-1000.supervised</th>
+      <th>ecg-length-1000</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7604,7 +3924,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-length-50.supervised</th>
+      <th>ecg-length-50</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7621,7 +3941,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-length-500.supervised</th>
+      <th>ecg-length-500</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7638,7 +3958,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-noise-00%.supervised</th>
+      <th>ecg-noise-00%</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7655,7 +3975,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>100.0</td>
     </tr>
     <tr>
-      <th>ecg-noise-01%.supervised</th>
+      <th>ecg-noise-01%</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7672,7 +3992,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>100.0</td>
     </tr>
     <tr>
-      <th>ecg-noise-10%.supervised</th>
+      <th>ecg-noise-10%</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7689,7 +4009,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>100.0</td>
     </tr>
     <tr>
-      <th>ecg-noise-30%.supervised</th>
+      <th>ecg-noise-30%</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7706,7 +4026,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>100.0</td>
     </tr>
     <tr>
-      <th>ecg-noise-50%.supervised</th>
+      <th>ecg-noise-50%</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7723,7 +4043,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>100.0</td>
     </tr>
     <tr>
-      <th>ecg-same-count-1.supervised</th>
+      <th>ecg-same-count-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7740,7 +4060,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-same-count-10.supervised</th>
+      <th>ecg-same-count-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7757,7 +4077,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-same-count-2.supervised</th>
+      <th>ecg-same-count-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7774,7 +4094,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-same-count-5.supervised</th>
+      <th>ecg-same-count-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7791,7 +4111,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-trend-linear.supervised</th>
+      <th>ecg-trend-linear</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7808,7 +4128,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-trend-quadratic.supervised</th>
+      <th>ecg-trend-quadratic</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7825,7 +4145,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-trend-sinus.supervised</th>
+      <th>ecg-trend-sinus</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7842,7 +4162,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>ecg-type-amplitude.supervised</th>
+      <th>ecg-type-amplitude</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7859,7 +4179,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-type-extremum.supervised</th>
+      <th>ecg-type-extremum</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7876,7 +4196,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-type-frequency.supervised</th>
+      <th>ecg-type-frequency</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7893,7 +4213,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-type-mean.supervised</th>
+      <th>ecg-type-mean</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7910,24 +4230,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-type-pattern-shift.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.758599e-01</td>
-      <td>1.758390e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-pattern.supervised</th>
+      <th>ecg-type-pattern</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -7944,2830 +4247,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-type-platform.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.631515e-01</td>
-      <td>1.750270e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-trend.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>6.314838e-01</td>
-      <td>1.770236e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-variance.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.654966e-01</td>
-      <td>1.758129e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>poly-combined-diff-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.456516e+00</td>
-      <td>2.351260e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-combined-diff-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.377771e+00</td>
-      <td>2.322751e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-combined-diff-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010500</td>
-      <td>6</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>100</td>
-      <td>-9.331116e+00</td>
-      <td>1.994025e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-diff-count-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-3.466385e+00</td>
-      <td>2.363279e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-diff-count-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010100</td>
-      <td>2</td>
-      <td>1</td>
-      <td>50.5</td>
-      <td>100</td>
-      <td>-3.465572e+00</td>
-      <td>2.364463e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-diff-count-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020100</td>
-      <td>3</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.455633e+00</td>
-      <td>2.375474e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-diff-count-4.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030100</td>
-      <td>4</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.380622e+00</td>
-      <td>2.287079e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-diff-count-5.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.040100</td>
-      <td>5</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.451048e+00</td>
-      <td>2.374834e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-9.332349e+00</td>
-      <td>1.994932e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.001000</td>
-      <td>1</td>
-      <td>10</td>
-      <td>10.0</td>
-      <td>10</td>
-      <td>-9.332729e+00</td>
-      <td>1.993839e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-100.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.333006e+00</td>
-      <td>1.994483e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-1000.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>1</td>
-      <td>1000</td>
-      <td>1000.0</td>
-      <td>1000</td>
-      <td>-9.333565e+00</td>
-      <td>1.996746e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-50.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.005000</td>
-      <td>1</td>
-      <td>50</td>
-      <td>50.0</td>
-      <td>50</td>
-      <td>-9.332697e+00</td>
-      <td>1.995173e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-length-500.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>1</td>
-      <td>500</td>
-      <td>500.0</td>
-      <td>500</td>
-      <td>-9.333210e+00</td>
-      <td>1.995247e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-same-count-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.467594e+00</td>
-      <td>2.359062e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-same-count-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>10</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.466491e+00</td>
-      <td>2.362213e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-same-count-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.467075e+00</td>
-      <td>2.359257e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-same-count-5.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>5</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.466381e+00</td>
-      <td>2.360412e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-trend-linear.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.113351e+01</td>
-      <td>2.063376e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-trend-quadratic.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-7.800156e+00</td>
-      <td>4.088125e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-trend-sinus.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.333263e+00</td>
-      <td>2.041951e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-type-extremum.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-9.333491e+00</td>
-      <td>1.994318e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-type-mean.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.322606e+00</td>
-      <td>2.001808e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-type-platform.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.260967e+00</td>
-      <td>2.123234e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-type-trend.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.153068e+00</td>
-      <td>2.150960e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>poly-type-variance.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-9.332443e+00</td>
-      <td>1.994118e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-combined-diff-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.054928e+00</td>
-      <td>1.409187e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-combined-diff-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>200</td>
-      <td>-1.971245e+00</td>
-      <td>1.571229e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-combined-diff-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010500</td>
-      <td>6</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>100</td>
-      <td>-1.538201e-01</td>
-      <td>4.910584e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-2.587796e+00</td>
-      <td>1.163683e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010100</td>
-      <td>2</td>
-      <td>1</td>
-      <td>50.5</td>
-      <td>100</td>
-      <td>-1.328535e+00</td>
-      <td>1.569975e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020100</td>
-      <td>3</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.469416e+00</td>
-      <td>1.449412e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-4.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030100</td>
-      <td>4</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.681904e+00</td>
-      <td>1.170001e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-5.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.040100</td>
-      <td>5</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.997902e+00</td>
-      <td>1.439437e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-6.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050100</td>
-      <td>6</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.424672e+00</td>
-      <td>1.351613e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>2.191296e-01</td>
-      <td>5.302186e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.001000</td>
-      <td>1</td>
-      <td>10</td>
-      <td>10.0</td>
-      <td>10</td>
-      <td>-1.178202e-01</td>
-      <td>5.195197e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-100.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>2.063539e-02</td>
-      <td>5.217774e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-1000.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>1</td>
-      <td>1000</td>
-      <td>1000.0</td>
-      <td>1000</td>
-      <td>4.259328e-02</td>
-      <td>5.762021e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-50.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.005000</td>
-      <td>1</td>
-      <td>50</td>
-      <td>50.0</td>
-      <td>50</td>
-      <td>1.058960e-01</td>
-      <td>4.856826e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-length-500.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>1</td>
-      <td>500</td>
-      <td>500.0</td>
-      <td>500</td>
-      <td>-1.751243e-02</td>
-      <td>6.033689e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-same-count-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.775352e+00</td>
-      <td>1.363101e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-same-count-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>10</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.012584e+00</td>
-      <td>1.665093e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-same-count-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.810225e+00</td>
-      <td>1.579784e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-same-count-5.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>5</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.914281e+00</td>
-      <td>1.492404e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-trend-linear.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.837025e+00</td>
-      <td>4.673160e-01</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-trend-quadratic.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.490580e+00</td>
-      <td>3.051704e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-trend-sinus.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-7.769164e-02</td>
-      <td>6.954356e-01</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-amplitude.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>2.067071e-01</td>
-      <td>5.316887e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-extremum.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>1.723682e-01</td>
-      <td>4.219626e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-mean.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>2.010571e-01</td>
-      <td>5.638765e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-platform.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>3.672204e-02</td>
-      <td>5.377901e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-trend.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.043994e-01</td>
-      <td>7.362283e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-type-variance.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.373060e-04</td>
-      <td>4.787262e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>sinus-combined-diff-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.999183e+00</td>
-      <td>1.269927e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-combined-diff-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>200</td>
-      <td>1.334635e+00</td>
-      <td>2.572375e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-combined-diff-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010500</td>
-      <td>6</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>100</td>
-      <td>1.229521e-03</td>
-      <td>7.091738e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.997098e+00</td>
-      <td>1.256075e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.000067e+00</td>
-      <td>1.271035e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-3.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.001757e+00</td>
-      <td>1.272226e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-4.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030100</td>
-      <td>4</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.998432e+00</td>
-      <td>1.267207e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-5.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.040100</td>
-      <td>5</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.001504e+00</td>
-      <td>1.273984e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-6.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050100</td>
-      <td>6</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.986455e+00</td>
-      <td>1.277278e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-7.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060100</td>
-      <td>7</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.992061e+00</td>
-      <td>1.270969e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-8.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070100</td>
-      <td>8</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.987175e+00</td>
-      <td>1.263559e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-diff-count-9.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.080100</td>
-      <td>9</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.990481e+00</td>
-      <td>1.269041e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>5.643245e-04</td>
-      <td>7.093110e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.001000</td>
-      <td>1</td>
-      <td>10</td>
-      <td>10.0</td>
-      <td>10</td>
-      <td>-1.186651e-04</td>
-      <td>7.088966e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-100.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.369302e-04</td>
-      <td>7.097400e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-1000.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>1</td>
-      <td>1000</td>
-      <td>1000.0</td>
-      <td>1000</td>
-      <td>1.239242e-03</td>
-      <td>7.132603e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-50.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.005000</td>
-      <td>1</td>
-      <td>50</td>
-      <td>50.0</td>
-      <td>50</td>
-      <td>-5.507567e-04</td>
-      <td>7.090734e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-length-500.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>1</td>
-      <td>500</td>
-      <td>500.0</td>
-      <td>500</td>
-      <td>-2.426485e-04</td>
-      <td>7.136283e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-noise-00%.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.446906e-08</td>
-      <td>7.035272e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-noise-01%.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.649894e-04</td>
-      <td>7.036797e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-noise-10%.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.386891e-03</td>
-      <td>7.105116e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-noise-30%.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.447817e-03</td>
-      <td>7.645662e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-noise-50%.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.516226e-03</td>
-      <td>8.745272e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-position-beginning.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.221007e-02</td>
-      <td>1.468908e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-position-end.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.249239e-02</td>
-      <td>1.472230e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-position-middle.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>6.391571e-03</td>
-      <td>1.474999e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-same-count-1.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.300417e+00</td>
-      <td>2.527405e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-same-count-10.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>10</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299586e+00</td>
-      <td>2.546901e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-same-count-2.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299644e+00</td>
-      <td>2.518167e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-same-count-5.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>5</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.299711e+00</td>
-      <td>2.540003e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>sinus-trend-linear.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.799704e+00</td>
-      <td>1.260917e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-trend-quadratic.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-4.664939e-01</td>
-      <td>3.238132e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-trend-sinus.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.999942e+00</td>
-      <td>1.306591e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-amplitude.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>3.793412e-04</td>
-      <td>7.173056e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-extremum.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>4.477500e-04</td>
-      <td>7.093208e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-frequency.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>7.137565e-04</td>
-      <td>7.089652e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-mean.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.953375e-03</td>
-      <td>7.163786e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-pattern-shift.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.138656e-03</td>
-      <td>7.083178e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-pattern.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>3.246111e-04</td>
-      <td>7.100492e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-platform.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-5.827368e-04</td>
-      <td>7.044679e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-trend.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>2.508092e-01</td>
-      <td>7.348699e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-variance.supervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.675951e-04</td>
-      <td>7.088741e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th rowspan="168" valign="top">unsupervised</th>
-      <th>cbf-combined-diff-1.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.240198e+01</td>
-      <td>3.567649e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-combined-diff-2.unsupervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>200</td>
-      <td>1.240247e+01</td>
-      <td>2.797340e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-combined-diff-3.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010500</td>
-      <td>6</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>100</td>
-      <td>-3.046444e+00</td>
-      <td>6.028187e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-1.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.224626e+01</td>
-      <td>3.476618e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-2.unsupervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010100</td>
-      <td>2</td>
-      <td>1</td>
-      <td>50.5</td>
-      <td>100</td>
-      <td>1.234086e+01</td>
-      <td>3.125498e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-3.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020100</td>
-      <td>3</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.257913e+01</td>
-      <td>3.356754e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-4.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030100</td>
-      <td>4</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.232596e+01</td>
-      <td>3.326795e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-5.unsupervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.040100</td>
-      <td>5</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.191076e+01</td>
-      <td>3.715214e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-6.unsupervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050100</td>
-      <td>6</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.190434e+01</td>
-      <td>3.340090e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-diff-count-7.unsupervised*</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060100</td>
-      <td>7</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.262165e+01</td>
-      <td>3.375320e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-1.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-2.888471e+00</td>
-      <td>5.913124e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-10.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.001000</td>
-      <td>1</td>
-      <td>10</td>
-      <td>10.0</td>
-      <td>10</td>
-      <td>-2.988651e+00</td>
-      <td>5.914177e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-100.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.040956e+00</td>
-      <td>6.049999e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-1000.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>1</td>
-      <td>1000</td>
-      <td>1000.0</td>
-      <td>1000</td>
-      <td>-2.915676e+00</td>
-      <td>6.195275e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-50.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.005000</td>
-      <td>1</td>
-      <td>50</td>
-      <td>50.0</td>
-      <td>50</td>
-      <td>-3.073472e+00</td>
-      <td>5.852373e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-length-500.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>1</td>
-      <td>500</td>
-      <td>500.0</td>
-      <td>500</td>
-      <td>-3.018779e+00</td>
-      <td>6.218435e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-position-beginning.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.464529e+01</td>
-      <td>3.331868e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-position-end.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.515810e+01</td>
-      <td>3.267085e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-position-middle.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.457857e+01</td>
-      <td>3.760193e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-same-count-1.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.250274e+01</td>
-      <td>2.811671e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-same-count-10.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>10</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.194778e+01</td>
-      <td>2.764199e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-same-count-2.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.240711e+01</td>
-      <td>2.898653e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-same-count-5.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>5</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.246062e+01</td>
-      <td>3.481696e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-trend-linear.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-4.796003e+00</td>
-      <td>6.277594e-01</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-trend-quadratic.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-1.486138e+00</td>
-      <td>2.977317e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-trend-sinus.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.094487e+00</td>
-      <td>7.660974e-01</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-amplitude.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.945503e+00</td>
-      <td>5.651049e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-extremum.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>-2.994885e+00</td>
-      <td>5.924835e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-mean.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.997496e+00</td>
-      <td>6.062412e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-pattern.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.953815e+00</td>
-      <td>6.144185e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-platform.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-3.006968e+00</td>
-      <td>6.210990e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-trend.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.835973e+00</td>
-      <td>5.709965e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>cbf-type-variance.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.999445e+00</td>
-      <td>6.053116e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>ecg-combined-diff-1.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.139145e+00</td>
-      <td>5.542083e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-combined-diff-2.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070000</td>
-      <td>6</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>200</td>
-      <td>5.052937e-01</td>
-      <td>1.759627e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-combined-diff-3.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010500</td>
-      <td>6</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>100</td>
-      <td>4.737141e-01</td>
-      <td>1.761337e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-1.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.657726e-01</td>
-      <td>1.755754e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-2.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.702537e-01</td>
-      <td>1.754948e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-3.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030000</td>
-      <td>3</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.638062e-01</td>
-      <td>1.754721e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-4.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.030100</td>
-      <td>4</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.729081e-01</td>
-      <td>1.756005e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-5.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.040100</td>
-      <td>5</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.673643e-01</td>
-      <td>1.760142e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-6.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050100</td>
-      <td>6</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.798310e-01</td>
-      <td>1.762061e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-7.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.060100</td>
-      <td>7</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.713740e-01</td>
-      <td>1.752084e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-8.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.070100</td>
-      <td>8</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.771029e-01</td>
-      <td>1.746051e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-diff-count-9.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.080100</td>
-      <td>9</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.763818e-01</td>
-      <td>1.749182e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-1.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>4.659142e-01</td>
-      <td>1.765687e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-10.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.001000</td>
-      <td>1</td>
-      <td>10</td>
-      <td>10.0</td>
-      <td>10</td>
-      <td>4.620226e-01</td>
-      <td>1.760028e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-100.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.631243e-01</td>
-      <td>1.760071e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-1000.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>1</td>
-      <td>1000</td>
-      <td>1000.0</td>
-      <td>1000</td>
-      <td>4.643807e-01</td>
-      <td>1.762169e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-50.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.005000</td>
-      <td>1</td>
-      <td>50</td>
-      <td>50.0</td>
-      <td>50</td>
-      <td>4.637835e-01</td>
-      <td>1.760285e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-length-500.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>1</td>
-      <td>500</td>
-      <td>500.0</td>
-      <td>500</td>
-      <td>4.640575e-01</td>
-      <td>1.759338e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-noise-00%.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.134612e+00</td>
-      <td>5.538385e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-noise-01%.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.134572e+00</td>
-      <td>5.538188e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-noise-10%.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.134201e+00</td>
-      <td>5.538242e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-noise-30%.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.132331e+00</td>
-      <td>5.546391e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-noise-50%.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>9.143509e+00</td>
-      <td>5.555578e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>100.0</td>
-    </tr>
-    <tr>
-      <th>ecg-same-count-1.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.683547e-01</td>
-      <td>1.758442e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-same-count-10.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.100000</td>
-      <td>10</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.733278e-01</td>
-      <td>1.758622e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-same-count-2.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020000</td>
-      <td>2</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.682118e-01</td>
-      <td>1.758351e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-same-count-5.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.050000</td>
-      <td>5</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.622034e-01</td>
-      <td>1.758107e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-trend-linear.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.675350e-01</td>
-      <td>2.102365e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-trend-quadratic.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>2.000281e+00</td>
-      <td>3.456423e+00</td>
-      <td>polynomial</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-trend-sinus.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.624907e-01</td>
-      <td>1.796117e+00</td>
-      <td>sinus</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-amplitude.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.757222e-01</td>
-      <td>1.778670e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-extremum.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.000100</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>4.702817e-01</td>
-      <td>1.769509e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-frequency.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.759311e-01</td>
-      <td>1.758275e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-mean.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.870311e-01</td>
-      <td>1.761964e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-pattern-shift.unsupervised</th>
+      <th>ecg-type-pattern-shift</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10784,24 +4264,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-type-pattern.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>4.673664e-01</td>
-      <td>1.758730e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>15.0</td>
-    </tr>
-    <tr>
-      <th>ecg-type-platform.unsupervised</th>
+      <th>ecg-type-platform</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10818,7 +4281,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-type-trend.unsupervised</th>
+      <th>ecg-type-trend</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10835,7 +4298,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>ecg-type-variance.unsupervised</th>
+      <th>ecg-type-variance</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10852,7 +4315,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>15.0</td>
     </tr>
     <tr>
-      <th>poly-combined-diff-1.unsupervised</th>
+      <th>poly-combined-diff-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10869,7 +4332,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-combined-diff-2.unsupervised</th>
+      <th>poly-combined-diff-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10886,7 +4349,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-combined-diff-3.unsupervised</th>
+      <th>poly-combined-diff-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10903,7 +4366,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-diff-count-1.unsupervised</th>
+      <th>poly-diff-count-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10920,7 +4383,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-diff-count-2.unsupervised</th>
+      <th>poly-diff-count-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10937,7 +4400,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-diff-count-3.unsupervised</th>
+      <th>poly-diff-count-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10954,7 +4417,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-diff-count-4.unsupervised</th>
+      <th>poly-diff-count-4</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10971,7 +4434,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-diff-count-5.unsupervised</th>
+      <th>poly-diff-count-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -10988,7 +4451,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-length-1.unsupervised</th>
+      <th>poly-length-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11005,7 +4468,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-length-10.unsupervised</th>
+      <th>poly-length-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11022,7 +4485,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-length-100.unsupervised</th>
+      <th>poly-length-100</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11039,7 +4502,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-length-1000.unsupervised</th>
+      <th>poly-length-1000</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11056,7 +4519,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-length-50.unsupervised</th>
+      <th>poly-length-50</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11073,7 +4536,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-length-500.unsupervised</th>
+      <th>poly-length-500</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11090,7 +4553,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-same-count-1.unsupervised</th>
+      <th>poly-same-count-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11107,7 +4570,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-same-count-10.unsupervised</th>
+      <th>poly-same-count-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11124,7 +4587,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-same-count-2.unsupervised</th>
+      <th>poly-same-count-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11141,7 +4604,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-same-count-5.unsupervised</th>
+      <th>poly-same-count-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11158,7 +4621,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-trend-linear.unsupervised</th>
+      <th>poly-trend-linear</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11175,7 +4638,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-trend-quadratic.unsupervised</th>
+      <th>poly-trend-quadratic</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11192,7 +4655,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-trend-sinus.unsupervised</th>
+      <th>poly-trend-sinus</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11209,7 +4672,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-type-extremum.unsupervised</th>
+      <th>poly-type-extremum</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11226,7 +4689,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-type-mean.unsupervised</th>
+      <th>poly-type-mean</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11243,7 +4706,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-type-platform.unsupervised</th>
+      <th>poly-type-platform</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11260,7 +4723,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-type-trend.unsupervised</th>
+      <th>poly-type-trend</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11277,7 +4740,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>poly-type-variance.unsupervised</th>
+      <th>poly-type-variance</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11294,7 +4757,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-combined-diff-1.unsupervised</th>
+      <th>rw-combined-diff-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11311,7 +4774,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-combined-diff-2.unsupervised</th>
+      <th>rw-combined-diff-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11328,7 +4791,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-combined-diff-3.unsupervised</th>
+      <th>rw-combined-diff-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11345,7 +4808,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-diff-count-1.unsupervised</th>
+      <th>rw-diff-count-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11362,7 +4825,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-diff-count-2.unsupervised</th>
+      <th>rw-diff-count-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11379,24 +4842,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-diff-count-3.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.020100</td>
-      <td>3</td>
-      <td>1</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>-2.469416e+00</td>
-      <td>1.449412e+00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>rw-diff-count-4.unsupervised</th>
+      <th>rw-diff-count-4</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11413,7 +4859,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-diff-count-5.unsupervised</th>
+      <th>rw-diff-count-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11430,7 +4876,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-diff-count-6.unsupervised</th>
+      <th>rw-diff-count-6</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11447,7 +4893,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-length-1.unsupervised</th>
+      <th>rw-length-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11464,7 +4910,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-length-10.unsupervised</th>
+      <th>rw-length-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11481,7 +4927,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-length-100.unsupervised</th>
+      <th>rw-length-100</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11498,7 +4944,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-length-1000.unsupervised</th>
+      <th>rw-length-1000</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11515,7 +4961,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-length-50.unsupervised</th>
+      <th>rw-length-50</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11532,7 +4978,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-length-500.unsupervised</th>
+      <th>rw-length-500</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11549,7 +4995,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-same-count-1.unsupervised</th>
+      <th>rw-same-count-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11566,7 +5012,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-same-count-10.unsupervised</th>
+      <th>rw-same-count-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11583,7 +5029,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-same-count-2.unsupervised</th>
+      <th>rw-same-count-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11600,7 +5046,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-same-count-5.unsupervised</th>
+      <th>rw-same-count-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11617,7 +5063,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-trend-linear.unsupervised</th>
+      <th>rw-trend-linear</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11634,7 +5080,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-trend-quadratic.unsupervised</th>
+      <th>rw-trend-quadratic</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11651,7 +5097,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-trend-sinus.unsupervised</th>
+      <th>rw-trend-sinus</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11668,7 +5114,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-type-amplitude.unsupervised</th>
+      <th>rw-type-amplitude</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11685,7 +5131,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-type-extremum.unsupervised</th>
+      <th>rw-type-extremum</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11702,7 +5148,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-type-mean.unsupervised</th>
+      <th>rw-type-mean</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11719,7 +5165,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-type-platform.unsupervised</th>
+      <th>rw-type-platform</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11736,7 +5182,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-type-trend.unsupervised</th>
+      <th>rw-type-trend</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11753,7 +5199,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>rw-type-variance.unsupervised</th>
+      <th>rw-type-variance</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11770,7 +5216,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th>sinus-combined-diff-1.unsupervised</th>
+      <th>sinus-combined-diff-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11787,7 +5233,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-combined-diff-2.unsupervised</th>
+      <th>sinus-combined-diff-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11804,7 +5250,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>8.0</td>
     </tr>
     <tr>
-      <th>sinus-combined-diff-3.unsupervised</th>
+      <th>sinus-combined-diff-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11821,7 +5267,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-diff-count-1.unsupervised</th>
+      <th>sinus-diff-count-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11838,7 +5284,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-diff-count-2.unsupervised</th>
+      <th>sinus-diff-count-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11855,7 +5301,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-diff-count-3.unsupervised</th>
+      <th>sinus-diff-count-3</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11872,7 +5318,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-diff-count-4.unsupervised</th>
+      <th>sinus-diff-count-4</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11889,7 +5335,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-diff-count-5.unsupervised</th>
+      <th>sinus-diff-count-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11906,7 +5352,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-diff-count-6.unsupervised</th>
+      <th>sinus-diff-count-6</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11923,7 +5369,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-diff-count-7.unsupervised</th>
+      <th>sinus-diff-count-7</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11940,7 +5386,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-diff-count-8.unsupervised</th>
+      <th>sinus-diff-count-8</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11957,7 +5403,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-diff-count-9.unsupervised</th>
+      <th>sinus-diff-count-9</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11974,7 +5420,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-length-1.unsupervised</th>
+      <th>sinus-length-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -11991,7 +5437,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-length-10.unsupervised</th>
+      <th>sinus-length-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12008,7 +5454,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-length-100.unsupervised</th>
+      <th>sinus-length-100</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12025,7 +5471,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-length-1000.unsupervised</th>
+      <th>sinus-length-1000</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12042,7 +5488,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-length-50.unsupervised</th>
+      <th>sinus-length-50</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12059,7 +5505,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-length-500.unsupervised</th>
+      <th>sinus-length-500</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12076,7 +5522,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-noise-00%.unsupervised</th>
+      <th>sinus-noise-00%</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12093,7 +5539,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-noise-01%.unsupervised</th>
+      <th>sinus-noise-01%</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12110,7 +5556,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-noise-10%.unsupervised</th>
+      <th>sinus-noise-10%</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12127,7 +5573,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-noise-30%.unsupervised</th>
+      <th>sinus-noise-30%</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12144,7 +5590,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-noise-50%.unsupervised</th>
+      <th>sinus-noise-50%</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12161,7 +5607,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-position-beginning.unsupervised</th>
+      <th>sinus-position-beginning</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12178,7 +5624,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-position-end.unsupervised</th>
+      <th>sinus-position-end</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12195,7 +5641,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-position-middle.unsupervised</th>
+      <th>sinus-position-middle</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12212,7 +5658,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-same-count-1.unsupervised</th>
+      <th>sinus-same-count-1</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12229,7 +5675,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>8.0</td>
     </tr>
     <tr>
-      <th>sinus-same-count-10.unsupervised</th>
+      <th>sinus-same-count-10</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12246,7 +5692,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>8.0</td>
     </tr>
     <tr>
-      <th>sinus-same-count-2.unsupervised</th>
+      <th>sinus-same-count-2</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12263,7 +5709,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>8.0</td>
     </tr>
     <tr>
-      <th>sinus-same-count-5.unsupervised</th>
+      <th>sinus-same-count-5</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12280,7 +5726,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>8.0</td>
     </tr>
     <tr>
-      <th>sinus-trend-linear.unsupervised</th>
+      <th>sinus-trend-linear</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12297,7 +5743,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-trend-quadratic.unsupervised</th>
+      <th>sinus-trend-quadratic</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12314,7 +5760,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-trend-sinus.unsupervised</th>
+      <th>sinus-trend-sinus</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12331,7 +5777,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>43.0</td>
     </tr>
     <tr>
-      <th>sinus-type-amplitude.unsupervised</th>
+      <th>sinus-type-amplitude</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12348,7 +5794,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-type-extremum.unsupervised</th>
+      <th>sinus-type-extremum</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12365,7 +5811,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-type-frequency.unsupervised</th>
+      <th>sinus-type-frequency</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12382,7 +5828,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-type-mean.unsupervised</th>
+      <th>sinus-type-mean</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12399,24 +5845,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-type-pattern-shift.unsupervised</th>
-      <td>synthetic</td>
-      <td>Integer</td>
-      <td>10000</td>
-      <td>1</td>
-      <td>0.010000</td>
-      <td>1</td>
-      <td>100</td>
-      <td>100.0</td>
-      <td>100</td>
-      <td>1.138656e-03</td>
-      <td>7.083178e-01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>sinus-type-pattern.unsupervised</th>
+      <th>sinus-type-pattern</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12433,7 +5862,24 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-type-platform.unsupervised</th>
+      <th>sinus-type-pattern-shift</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>10000</td>
+      <td>1</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td>100</td>
+      <td>100.0</td>
+      <td>100</td>
+      <td>1.138656e-03</td>
+      <td>7.083178e-01</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>20.0</td>
+    </tr>
+    <tr>
+      <th>sinus-type-platform</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12450,7 +5896,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-type-trend.unsupervised</th>
+      <th>sinus-type-trend</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -12467,7 +5913,7 @@ You can read more about the reasons of the exclusions in our paper.
       <td>20.0</td>
     </tr>
     <tr>
-      <th>sinus-type-variance.unsupervised</th>
+      <th>sinus-type-variance</th>
       <td>synthetic</td>
       <td>Integer</td>
       <td>10000</td>
@@ -17233,60 +10679,6 @@ You can read more about the reasons of the exclusions in our paper.
       <td>NaN</td>
     </tr>
     <tr>
-      <th rowspan="3" valign="top">Keogh</th>
-      <th rowspan="3" valign="top">univariate</th>
-      <th rowspan="3" valign="top">semi-supervised</th>
-      <th>e0509m*</th>
-      <td>real</td>
-      <td>Integer</td>
-      <td>15000</td>
-      <td>1</td>
-      <td>0.016600</td>
-      <td>1</td>
-      <td>249</td>
-      <td>249.0</td>
-      <td>249</td>
-      <td>-5.028676e+02</td>
-      <td>4.915219e+01</td>
-      <td>no trend</td>
-      <td>difference_stationary</td>
-      <td>59.0</td>
-    </tr>
-    <tr>
-      <th>e0509m_rand_50*</th>
-      <td>real</td>
-      <td>Integer</td>
-      <td>15000</td>
-      <td>1</td>
-      <td>0.016600</td>
-      <td>1</td>
-      <td>249</td>
-      <td>249.0</td>
-      <td>249</td>
-      <td>-5.031390e+02</td>
-      <td>6.958913e+01</td>
-      <td>no trend</td>
-      <td>difference_stationary</td>
-      <td>38.0</td>
-    </tr>
-    <tr>
-      <th>qtdbSel100MLII*</th>
-      <td>real</td>
-      <td>Integer</td>
-      <td>20000</td>
-      <td>1</td>
-      <td>0.010050</td>
-      <td>1</td>
-      <td>201</td>
-      <td>201.0</td>
-      <td>201</td>
-      <td>-6.390105e+01</td>
-      <td>3.693295e+01</td>
-      <td>no trend</td>
-      <td>stationary</td>
-      <td>40.0</td>
-    </tr>
-    <tr>
       <th rowspan="9" valign="top">Kitsune</th>
       <th rowspan="9" valign="top">multivariate</th>
       <th rowspan="9" valign="top">unsupervised</th>
@@ -20947,6 +14339,366 @@ You can read more about the reasons of the exclusions in our paper.
       <td>no trend</td>
       <td>difference_stationary</td>
       <td>NaN</td>
+    </tr>
+    <tr>
+      <th rowspan="21" valign="top">NormA</th>
+      <th rowspan="21" valign="top">univariate</th>
+      <th rowspan="21" valign="top">unsupervised</th>
+      <th>Discords_annsgun</th>
+      <td>real</td>
+      <td>Integer</td>
+      <td>2000</td>
+      <td>1</td>
+      <td>0.075000</td>
+      <td>1</td>
+      <td>150</td>
+      <td>150.0</td>
+      <td>150</td>
+      <td>3.097742e+02</td>
+      <td>9.624424e+01</td>
+      <td>no trend</td>
+      <td>difference_stationary</td>
+      <td>111.0</td>
+    </tr>
+    <tr>
+      <th>Discords_dutch_power_demand</th>
+      <td>real</td>
+      <td>Integer</td>
+      <td>35040</td>
+      <td>1</td>
+      <td>0.091324</td>
+      <td>4</td>
+      <td>800</td>
+      <td>800.0</td>
+      <td>800</td>
+      <td>1.144038e+03</td>
+      <td>2.927258e+02</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>111.0</td>
+    </tr>
+    <tr>
+      <th>Discords_marotta_valve_tek_14</th>
+      <td>real</td>
+      <td>Integer</td>
+      <td>5000</td>
+      <td>1</td>
+      <td>0.051200</td>
+      <td>2</td>
+      <td>128</td>
+      <td>128.0</td>
+      <td>128</td>
+      <td>1.120064e+00</td>
+      <td>1.703123e+00</td>
+      <td>no trend</td>
+      <td>difference_stationary</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Discords_marotta_valve_tek_16</th>
+      <td>real</td>
+      <td>Integer</td>
+      <td>5000</td>
+      <td>1</td>
+      <td>0.025600</td>
+      <td>1</td>
+      <td>128</td>
+      <td>128.0</td>
+      <td>128</td>
+      <td>1.054768e+00</td>
+      <td>1.665258e+00</td>
+      <td>no trend</td>
+      <td>difference_stationary</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Discords_marotta_valve_tek_17</th>
+      <td>real</td>
+      <td>Integer</td>
+      <td>5000</td>
+      <td>1</td>
+      <td>0.025600</td>
+      <td>1</td>
+      <td>128</td>
+      <td>128.0</td>
+      <td>128</td>
+      <td>9.959120e-01</td>
+      <td>1.626007e+00</td>
+      <td>no trend</td>
+      <td>difference_stationary</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Discords_patient_respiration1</th>
+      <td>real</td>
+      <td>Integer</td>
+      <td>6500</td>
+      <td>1</td>
+      <td>0.030769</td>
+      <td>2</td>
+      <td>100</td>
+      <td>100.0</td>
+      <td>100</td>
+      <td>7.452095e+01</td>
+      <td>2.894738e+02</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>22.0</td>
+    </tr>
+    <tr>
+      <th>Discords_patient_respiration2*</th>
+      <td>real</td>
+      <td>Integer</td>
+      <td>4000</td>
+      <td>1</td>
+      <td>0.075000</td>
+      <td>2</td>
+      <td>150</td>
+      <td>150.0</td>
+      <td>150</td>
+      <td>7.977460e+01</td>
+      <td>7.799913e+01</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>40.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_104000_AnomalyL_200_AnomalyN_20_NoisePerc_0</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>104000</td>
+      <td>1</td>
+      <td>0.038462</td>
+      <td>20</td>
+      <td>200</td>
+      <td>200.0</td>
+      <td>200</td>
+      <td>-6.943642e-15</td>
+      <td>1.413004e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>250.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_106000_AnomalyL_100_AnomalyN_60_NoisePerc_0</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>106000</td>
+      <td>1</td>
+      <td>0.056604</td>
+      <td>60</td>
+      <td>100</td>
+      <td>100.0</td>
+      <td>100</td>
+      <td>-5.439808e-15</td>
+      <td>1.414737e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>250.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_108000_AnomalyL_200_AnomalyN_40_NoisePerc_0</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>108000</td>
+      <td>1</td>
+      <td>0.074074</td>
+      <td>40</td>
+      <td>200</td>
+      <td>200.0</td>
+      <td>200</td>
+      <td>-1.370558e-15</td>
+      <td>1.412455e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>250.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_112000_AnomalyL_200_AnomalyN_60_NoisePerc_0*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>112000</td>
+      <td>1</td>
+      <td>0.107143</td>
+      <td>60</td>
+      <td>200</td>
+      <td>200.0</td>
+      <td>200</td>
+      <td>9.062465e-15</td>
+      <td>1.413815e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>250.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_112000_AnomalyL_200_AnomalyN_60_NoisePerc_10*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>112000</td>
+      <td>1</td>
+      <td>0.107143</td>
+      <td>60</td>
+      <td>200</td>
+      <td>200.0</td>
+      <td>200</td>
+      <td>5.083426e-15</td>
+      <td>1.411193e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>333.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_112000_AnomalyL_200_AnomalyN_60_NoisePerc_15*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>112000</td>
+      <td>1</td>
+      <td>0.107143</td>
+      <td>60</td>
+      <td>200</td>
+      <td>200.0</td>
+      <td>200</td>
+      <td>-1.226194e-14</td>
+      <td>1.412934e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>250.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_112000_AnomalyL_200_AnomalyN_60_NoisePerc_20*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>112000</td>
+      <td>1</td>
+      <td>0.107143</td>
+      <td>60</td>
+      <td>200</td>
+      <td>200.0</td>
+      <td>200</td>
+      <td>-4.125208e-15</td>
+      <td>1.413281e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>200.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_112000_AnomalyL_200_AnomalyN_60_NoisePerc_25*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>112000</td>
+      <td>1</td>
+      <td>0.107143</td>
+      <td>60</td>
+      <td>200</td>
+      <td>200.0</td>
+      <td>200</td>
+      <td>-8.619898e-15</td>
+      <td>1.410894e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>333.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_112000_AnomalyL_200_AnomalyN_60_NoisePerc_5*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>112000</td>
+      <td>1</td>
+      <td>0.107143</td>
+      <td>60</td>
+      <td>200</td>
+      <td>200.0</td>
+      <td>200</td>
+      <td>-8.522453e-15</td>
+      <td>1.411797e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>333.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_116000_AnomalyL_200_AnomalyN_80_NoisePerc_0*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>116000</td>
+      <td>1</td>
+      <td>0.137931</td>
+      <td>80</td>
+      <td>200</td>
+      <td>200.0</td>
+      <td>200</td>
+      <td>-7.126989e-15</td>
+      <td>1.413798e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>250.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_120000_AnomalyL_200_AnomalyN_100_NoisePerc_0*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>120000</td>
+      <td>1</td>
+      <td>0.166667</td>
+      <td>100</td>
+      <td>200</td>
+      <td>200.0</td>
+      <td>200</td>
+      <td>-4.704740e-15</td>
+      <td>1.413511e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>333.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_124000_AnomalyL_400_AnomalyN_60_NoisePerc_0*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>124000</td>
+      <td>1</td>
+      <td>0.193548</td>
+      <td>60</td>
+      <td>400</td>
+      <td>400.0</td>
+      <td>400</td>
+      <td>3.163061e-15</td>
+      <td>1.414285e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>166.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_148000_AnomalyL_800_AnomalyN_60_NoisePerc_0*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>148000</td>
+      <td>1</td>
+      <td>0.324324</td>
+      <td>60</td>
+      <td>800</td>
+      <td>800.0</td>
+      <td>800</td>
+      <td>-7.988805e-17</td>
+      <td>1.414400e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>34.0</td>
+    </tr>
+    <tr>
+      <th>SinusRW_Length_196000_AnomalyL_1600_AnomalyN_60_NoisePerc_0*</th>
+      <td>synthetic</td>
+      <td>Integer</td>
+      <td>196000</td>
+      <td>1</td>
+      <td>0.489796</td>
+      <td>60</td>
+      <td>1600</td>
+      <td>1600.0</td>
+      <td>1600</td>
+      <td>-2.561434e-15</td>
+      <td>1.411909e+00</td>
+      <td>no trend</td>
+      <td>stationary</td>
+      <td>36.0</td>
     </tr>
     <tr>
       <th rowspan="24" valign="top">OPPORTUNITY</th>
@@ -29843,3 +23595,4 @@ You can read more about the reasons of the exclusions in our paper.
   </tbody>
 </table>
 </div>
+
