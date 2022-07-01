@@ -26,20 +26,20 @@ You can use the following BibTeX entries:
 
 ```bibtex
 @article{SchmidlEtAl2022Anomaly,
-  title = {Anomaly Detection in Time Series: {{A}} Comprehensive Evaluation},
+  title = {Anomaly Detection in Time Series: A Comprehensive Evaluation},
   author = {Schmidl, Sebastian and Wenig, Phillip and Papenbrock, Thorsten},
   date = {2022},
-  journaltitle = {Proceedings of the {{VLDB Endowment}} ({{PVLDB}})},
+  journaltitle = {Proceedings of the VLDB Endowment (PVLDB)},
   volume = {15},
   number = {9},
   pages = {1779--1797},
   doi = {10.14778/3538598.3538602}
 }
 @article{WenigEtAl2022TimeEval,
-  title = {TimeEval: {{A}} Benchmarking Toolkit for Time Series Anomaly Detection Algorithms},
+  title = {TimeEval: A Benchmarking Toolkit for Time Series Anomaly Detection Algorithms},
   author = {Wenig, Phillip and Schmidl, Sebastian and Papenbrock, Thorsten},
   date = {2022},
-  journaltitle = {Proceedings of the {{VLDB Endowment}} ({{PVLDB}})},
+  journaltitle = {Proceedings of the VLDB Endowment (PVLDB)},
   volume = {15},
   number = {12},
   pages = {XXXX--XXXX},
