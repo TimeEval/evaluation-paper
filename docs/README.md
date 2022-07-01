@@ -7,11 +7,45 @@ If you use our artifacts, please consider [citing our paper](#reference).
 
 ## Reference
 
-If you use this work or any related software or data artifacts, please cite our paper as follows:
+If you use our evaluation results or our benchmark datasets and algorithms, please cite our evaluation paper:
 
-> tbd
+> Sebastian Schmidl, Phillip Wenig, and Thorsten Papenbrock.
+> Anomaly Detection in Time Series: A Comprehensive Evaluation. PVLDB, 15(9): 1779 - 1797, 2022.
+> doi:[10.14778/3538598.3538602](https://doi.org/10.14778/3538598.3538602)
 
-Manuscript submitted to [VLDB 2022](https://vldb.org/2022/).
+If you use the TimeEval toolkit or any of its related software artifacts in your project or research, please cite our demonstration paper:
+
+> Phillip Wenig, Sebastian Schmidl, and Thorsten Papenbrock.
+> TimeEval: A Benchmarking Toolkit for Time Series Anomaly Detection Algorithms. PVLDB, 15(12): XXXX - XXXX, 2022.
+> doi:[YYYY](https://doi.org/YYYY)
+>
+> _To appear in [PVLDB 2022 volume 15 issue 12](https://vldb.org/2022/)_.
+
+
+You can use the following BibTeX entries:
+
+```bibtex
+@article{SchmidlEtAl2022Anomaly,
+  title = {Anomaly Detection in Time Series: {{A}} Comprehensive Evaluation},
+  author = {Schmidl, Sebastian and Wenig, Phillip and Papenbrock, Thorsten},
+  date = {2022},
+  journaltitle = {Proceedings of the {{VLDB Endowment}} ({{PVLDB}})},
+  volume = {15},
+  number = {9},
+  pages = {1779--1797},
+  doi = {10.14778/3538598.3538602}
+}
+@article{WenigEtAl2022TimeEval,
+  title = {TimeEval: {{A}} Benchmarking Toolkit for Time Series Anomaly Detection Algorithms},
+  author = {Wenig, Phillip and Schmidl, Sebastian and Papenbrock, Thorsten},
+  date = {2022},
+  journaltitle = {Proceedings of the {{VLDB Endowment}} ({{PVLDB}})},
+  volume = {15},
+  number = {12},
+  pages = {XXXX--XXXX},
+  doi = {YYYY}
+}
+```
 
 ## Motivation
 
