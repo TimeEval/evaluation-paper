@@ -1,6 +1,6 @@
 # Anomaly Detection in Time Series: A Comprehensive Evaluation
 
-This is the supporting website for the paper ["Anomaly Detection in Time Series: A Comprehensive Evaluation"][paper].
+This is the supporting website for the paper ["Anomaly Detection in Time Series: A Comprehensive Evaluation"](http://vldb.org/pvldb/vol15/p1779-wenig.pdf).
 On this website, we provide the implementations of all algorithms, links to the used datasets, additional algorithm and dataset metadata, as well as further insights from our results that did not make it into the paper.
 
 If you use our artifacts, please consider [citing our paper](#reference).
