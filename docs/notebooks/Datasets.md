@@ -366,6 +366,20 @@ This file contains the same metadata as the dataset overview in Sect. [Dataset l
 > The time series has a visible steep climb or fall.
 > We fixed the dataset generator GutenTAG, but kept the datasets as is to ensure reproducibility of our evaluation results.
 
+#### Additional datasets
+
+After publication of our evaluation paper, we collected further dataset collections for TimeEval.
+Those datasets are not included in the evaluation, but we want to share them anyway.
+
+You need the updated [index-File](https://owncloud.hpi.de/s/fMIXN7bIvuBMDv1) (`datasets.csv`) to use them in TimeEval:
+
+| Collection  | Paper | Download Source | Preprocessed (TimeEval format) |
+| :---------- | :---- | :-------------- | :----------------------------- |
+| WADI     | doi:[10.1145/3055366.3055375](https://doi.org/10.1145/3055366.3055375) | [Website](https://itrust.sutd.edu.sg/itrust-labs_datasets/) | (not allowed to share) |
+| SWaT     | doi:[10.1007/978-3-319-71368-7_8](https://doi.org/10.1007/978-3-319-71368-7_8) | [Website](https://itrust.sutd.edu.sg/itrust-labs_datasets/) | (not allowed to share) |
+| TSB-UAD-artificial | doi:[10.14778/3529337.3529354](https://doi.org/10.14778/3529337.3529354) | [Paper Website (Github)](https://github.com/TheDatumOrg/TSB-UAD) | [⬇](https://owncloud.hpi.de/s/CxBDzfuXzfHQeWv/download) (178MB) |
+| TSB-UAD-synthetic | doi:[10.14778/3529337.3529354](https://doi.org/10.14778/3529337.3529354) | [Paper Website (Github)](https://github.com/TheDatumOrg/TSB-UAD) | [⬇](https://owncloud.hpi.de/s/bHFHI7eEKC6GVxN/download) (1.8GB) |
+
 ### Preprocessing
 
 All collected datasets were preprocessed and converted to the TimeEval canonical file format.
@@ -376,13 +390,9 @@ The preprocessing had the following goals:
 3. Extraction of metadata
 
 **We do not perform standardization, feature extraction, or similar steps** because this might be different for different algorithms and should, thus, be part of the algorithm.
-We describe the individual preprocessing steps per collection in the next Sect. [Preprocessing Steps](#preprocessing-steps).
+We provide the individual preprocessing scripts per collection in the [TimeEval repository](https://github.com/HPI-Information-Systems/TimeEval/tree/main/notebooks/data-prep).
 
-#### Preprocessing Steps
-
-> tbd
-
-#### Canonical Dataset Format
+### Canonical Dataset Format
 
 TimeEval's canonical file format is based on CSV.
 Each file requires a header, cells (values) are separated by commas (decimal seperator is `.`), and records are separated by newlines (unix-style LF: `\n`).
