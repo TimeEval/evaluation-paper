@@ -323,42 +323,44 @@ The next section (Sect. [Collection of existing datasets](#collection-of-dataset
 
 We collected the existing datasets from different sources: time series anomaly detection publications, and data repositories, such as the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).
 The following table lists the sources of our datasets and provides the links to download the raw data as well as our preprocessed datasets.
+You can find all evaluation datasets and results in [this share](https://my.hidrive.com/share/ma4p8w4qqb).
 
 > For the preprocessed datasets in TimeEval format the [MIT License](../LICENSE) applies, where not otherwise stated.
+> https://my.hidrive.com/api/sharelink/download?id=dPCmgheW
 >
 > If you use any of these datasets in your research, please reference the original data source as well as [our paper](../#reference).
 
 | Collection  | Paper                                                                              | Download Source                                                                                             | Preprocessed (TimeEval format)                                   |
 |:------------|:-----------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|
-| CalIt2      | -                                                                                  | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/CalIt2+Building+People+Counts)                  | [⬇](https://nextcloud.hpi.de/s/9Tybix9jP7Mpoey/download) (<1MB)   |
-| Daphnet     | doi:[10.1109/TITB.2009.2036165](https://doi.org/10.1109/TITB.2009.2036165)         | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Daphnet+Freezing+of+Gait)                       | [⬇](https://nextcloud.hpi.de/s/XcCRyGzeyRdXmGW/download) (15MB)   |
-| Dodgers     | -                                                                                  | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Dodgers+Loop+Sensor)                            | [⬇](https://nextcloud.hpi.de/s/NX7qLqAc2oxqysD/download) (<1MB)   |
-| Exathlon    | doi:[10.14778/3476249.3476307](https://doi.org/10.14778/3476249.3476307)           | [Github Repository](https://github.com/exathlonbenchmark/exathlon)                                          | [⬇](https://nextcloud.hpi.de/s/2W8gReHE8TE7beP/download) (106MB)  |
-| GHL         | arXiv:[1612.06676](https://arxiv.org/abs/1612.06676)                               | [Paper Website](https://kas.pr/ics-research/dataset_ghl_1)                                                  | [⬇](https://nextcloud.hpi.de/s/ac9PCgQJ88pmEZB/download) (153MB)  |
-| Genesis     | doi:[10.1007/978-3-662-57805-6_4](https://doi.org/10.1007/978-3-662-57805-6_4)     | [Kaggle Dataset Repository](https://www.kaggle.com/inIT-OWL/genesis-demonstrator-data-for-machine-learning) | [⬇](https://nextcloud.hpi.de/s/CbxsgX3osz8eeR3/download) (<1MB)   |
-| _GutenTAG_ ⚠| ours                                            |                                                                                                                                                                                   | [⬇](https://nextcloud.hpi.de/s/fnX67TJ4w4qeTHx/download) (106MB; see notes below)  |
+| CalIt2      | -                                                                                  | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/CalIt2+Building+People+Counts)                  | [⬇](https://my.hidrive.com/api/sharelink/download?id=QbiGASlZ) (<1MB)   |
+| Daphnet     | doi:[10.1109/TITB.2009.2036165](https://doi.org/10.1109/TITB.2009.2036165)         | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Daphnet+Freezing+of+Gait)                       | [⬇](https://my.hidrive.com/api/sharelink/download?id=SfCmg30B) (15MB)   |
+| Dodgers     | -                                                                                  | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Dodgers+Loop+Sensor)                            | [⬇](https://my.hidrive.com/api/sharelink/download?id=uciGAM1q) (<1MB)   |
+| Exathlon    | doi:[10.14778/3476249.3476307](https://doi.org/10.14778/3476249.3476307)           | [Github Repository](https://github.com/exathlonbenchmark/exathlon)                                          | [⬇](https://my.hidrive.com/api/sharelink/download?id=q9imgqn3) (106MB)  |
+| Genesis     | doi:[10.1007/978-3-662-57805-6_4](https://doi.org/10.1007/978-3-662-57805-6_4)     | [Kaggle Dataset Repository](https://www.kaggle.com/inIT-OWL/genesis-demonstrator-data-for-machine-learning) | [⬇](https://my.hidrive.com/api/sharelink/download?id=kTimAkj5) (<1MB)   |
+| GHL         | arXiv:[1612.06676](https://arxiv.org/abs/1612.06676)                               | [Paper Website](https://kas.pr/ics-research/dataset_ghl_1)                                                  | [⬇](https://my.hidrive.com/api/sharelink/download?id=Zkimg1vS) (153MB)  |
+| GutenTAG    | ours                                                                               | see [below](#GutenTAG)                                                                                      | [⬇](https://my.hidrive.com/api/sharelink/download?id=j2imAkqU) (106MB)  |
 | IOPS        | doi[10.1145/3292500.3330680](https://doi.org/10.1145/3292500.3330680)              | [Challenge Website](http://iops.ai/dataset_detail/?id=10)                                                   | (not allowed to share)                                           |
-| KDD-TSAD    | arXiv:[2009.13807](http://arxiv.org/abs/2009.13807)                                | [Challenge Website](https://compete.hexagon-ml.com/practice/competition/39/)                                | [⬇](https://nextcloud.hpi.de/s/yWMnq3M2AJXn6gd/download) (110MB)  |
-| Kitsune     | doi:[10.14722/ndss.2018.23204](https://doi.org/10.14722/ndss.2018.23204)           | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Kitsune+Network+Attack+Dataset)                 | [⬇](https://nextcloud.hpi.de/s/kAtCsaymZt6dAgt/download) (13.5GB) |
-| LTDB        | doi:[10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215)       | doi:[10.13026/C2KS3F](https://doi.org/10.13026/C2KS3F) (PhysioNet)                                          | [⬇](https://nextcloud.hpi.de/s/4o6GXxHm38MH2bR/download) (405MB)  |
-| MGAB        | -                                                                                  | doi:[10.5281/zenodo.3760086](https://doi.org/10.5281/zenodo.3760086)                                        | [⬇](https://nextcloud.hpi.de/s/cLLpez6bnaXZXxd/download) (12MB)   |
-| MITDB       | doi:[10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215)       | doi:[10.13026/C2F305](https://doi.org/10.13026/C2F305) (PhysioNet)                                          | [⬇](https://nextcloud.hpi.de/s/H6HjaqwbTtoNrQz/download) (176MB)  |
-| Metro       | doi:[10.1109/I2MTC.2015.7151267](https://doi.org/10.1109/I2MTC.2015.7151267)       | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Metro+Interstate+Traffic+Volume)                | [⬇](https://nextcloud.hpi.de/s/qpk6KioYtNptciB/download) (<1MB)   |
-| NAB         | doi:[10.1016/j.neucom.2017.04.070](https://doi.org/10.1016/j.neucom.2017.04.070)   | [Benchmark Website (Github)](https://github.com/htm-community/NAB) | [⬇](https://nextcloud.hpi.de/s/5f2iPfkbKtHi6oj/download) (2MB; the same [AGPL-license](https://github.com/htm-community/NAB/blob/master/LICENSE.txt) applies) |
-| NASA-MSL    | doi:[10.1145/3219819.3219845](https://doi.org/10.1145/3219819.3219845)             | [Paper Website (Github)](https://github.com/khundman/telemanom)                                             | [⬇](https://nextcloud.hpi.de/s/96A4zRdgigBpyMk/download) (<1MB)   |
-| NASA-SMAP   | doi:[10.1145/3219819.3219845](https://doi.org/10.1145/3219819.3219845)             | [Paper Website (Github)](https://github.com/khundman/telemanom)                                             | [⬇](https://nextcloud.hpi.de/s/kf9ozeYAmb7TSab/download) (2MB)    |
-| NormA       | doi:[10.1145/3055366.3055375](https://doi.org/10.1007/s00778-021-00655-8)          | [Paper Website](https://helios2.mi.parisdescartes.fr/~themisp/norma/)                                       | [⬇](https://nextcloud.hpi.de/s/Xn9yCz2iCznmdaB/download) (15MB)   |
-| OPPORTUNITY | doi:[10.1109/INSS.2010.5573462](https://doi.org/10.1109/INSS.2010.5573462)         | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/URL+Reputation)                                 | [⬇](https://nextcloud.hpi.de/s/Cskw2kznz9F8D27/download) (204MB)  |
-| Occupancy   | doi:[10.1016/j.enbuild.2015.11.071](https://doi.org/10.1016/j.enbuild.2015.11.071) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+)                           | [⬇](https://nextcloud.hpi.de/s/Pm4GE7akjqosWW7/download) (<1MB)   |
-| SMD         | doi:[10.1145/3292500.3330672](https://doi.org/10.1145/3292500.3330672)             | [Paper Website (Github)](https://github.com/NetManAIOps/OmniAnomaly)                                        | [⬇](https://nextcloud.hpi.de/s/TXiCmLS5djpdWK7/download) (99MB)   |
+| KDD-TSAD    | arXiv:[2009.13807](http://arxiv.org/abs/2009.13807)                                | [Challenge Website](https://compete.hexagon-ml.com/practice/competition/39/)                                | [⬇](https://my.hidrive.com/api/sharelink/download?id=8ECmABis) (110MB)  |
+| Kitsune     | doi:[10.14722/ndss.2018.23204](https://doi.org/10.14722/ndss.2018.23204)           | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Kitsune+Network+Attack+Dataset)                 | [⬇](https://my.hidrive.com/api/sharelink/download?id=ICCGgm8F) (13.5GB) |
+| LTDB        | doi:[10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215)       | doi:[10.13026/C2KS3F](https://doi.org/10.13026/C2KS3F) (PhysioNet)                                          | [⬇](https://my.hidrive.com/api/sharelink/download?id=Csimgc2X) (405MB)  |
+| Metro       | doi:[10.1109/I2MTC.2015.7151267](https://doi.org/10.1109/I2MTC.2015.7151267)       | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Metro+Interstate+Traffic+Volume)                | [⬇](https://my.hidrive.com/api/sharelink/download?id=YUiGgxao) (<1MB)   |
+| MGAB        | -                                                                                  | doi:[10.5281/zenodo.3760086](https://doi.org/10.5281/zenodo.3760086)                                        | [⬇](https://my.hidrive.com/api/sharelink/download?id=W1CmA5To) (12MB)   |
+| MITDB       | doi:[10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215)       | doi:[10.13026/C2F305](https://doi.org/10.13026/C2F305) (PhysioNet)                                          | [⬇](https://my.hidrive.com/api/sharelink/download?id=YcCmAEXy) (176MB)  |
+| NAB         | doi:[10.1016/j.neucom.2017.04.070](https://doi.org/10.1016/j.neucom.2017.04.070)   | [Benchmark Website (Github)](https://github.com/htm-community/NAB) | [⬇](https://my.hidrive.com/api/sharelink/download?id=dziGgNfN) (2MB; the same [AGPL-license](https://github.com/htm-community/NAB/blob/master/LICENSE.txt) applies) |
+| NASA-MSL    | doi:[10.1145/3219819.3219845](https://doi.org/10.1145/3219819.3219845)             | [Paper Website (Github)](https://github.com/khundman/telemanom)                                             | [⬇](https://my.hidrive.com/api/sharelink/download?id=dPCmgheW) (<1MB)   |
+| NASA-SMAP   | doi:[10.1145/3219819.3219845](https://doi.org/10.1145/3219819.3219845)             | [Paper Website (Github)](https://github.com/khundman/telemanom)                                             | [⬇](https://my.hidrive.com/api/sharelink/download?id=B6iGA1nA) (2MB)    |
+| NormA       | doi:[10.1145/3055366.3055375](https://doi.org/10.1007/s00778-021-00655-8)          | [Paper Website](https://helios2.mi.parisdescartes.fr/~themisp/norma/)                                       | [⬇](https://my.hidrive.com/api/sharelink/download?id=4yCGgwwd) (15MB)   |
+| Occupancy   | doi:[10.1016/j.enbuild.2015.11.071](https://doi.org/10.1016/j.enbuild.2015.11.071) | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+)                           | [⬇](https://my.hidrive.com/api/sharelink/download?id=EBCGgKc2) (<1MB)   |
+| OPPORTUNITY | doi:[10.1109/INSS.2010.5573462](https://doi.org/10.1109/INSS.2010.5573462)         | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/URL+Reputation)                                 | [⬇](https://my.hidrive.com/api/sharelink/download?id=gRiGAW97) (204MB)  |
+| SMD         | doi:[10.1145/3292500.3330672](https://doi.org/10.1145/3292500.3330672)             | [Paper Website (Github)](https://github.com/NetManAIOps/OmniAnomaly)                                        | [⬇](https://my.hidrive.com/api/sharelink/download?id=W0CGA01i) (99MB)   |
 | SSA (SensorScope) | doi:[10.1016/j.peva.2010.08.018](https://doi.org/10.1016/j.peva.2010.08.018) | from [John Paparrizos](http://people.cs.uchicago.edu/~jopa/) (orignally from the [SensorScope project at EPFL](http://sensorscope.epfl.ch/) \[link seems down\]) | (not allowed to share) |
-| SVDB        | [MIT library](https://dspace.mit.edu/handle/1721.1/29206)                          | doi:[10.13026/C2V30W](https://doi.org/10.13026/C2V30W) (PhysioNet)                                          | [⬇](https://nextcloud.hpi.de/s/tzLZPfcepQgrFrP/download) (103MB)  |
+| SVDB        | [MIT library](https://dspace.mit.edu/handle/1721.1/29206)                          | doi:[10.13026/C2V30W](https://doi.org/10.13026/C2V30W) (PhysioNet)                                          | [⬇](https://my.hidrive.com/api/sharelink/download?id=lmCmAjUP) (103MB)  |
 | WebscopeS5  | -                                                                                  | [Website](https://webscope.sandbox.yahoo.com/catalog.php?datatype=s&did=70)                                 | (not allowed to share)                                           |
 
-You can download a spreadsheet as an index to the preprocessed datasets with metadata in CSV-format from [here](https://nextcloud.hpi.de/s/H45fGqzdG9g7gzM/download).
+You can download a spreadsheet as an index to the preprocessed datasets with metadata in CSV-format from [here](https://my.hidrive.com/api/sharelink/download?id=EziGgxOT).
 This file contains the same metadata as the dataset overview in Sect. [Dataset list](#dataset-list).
 
-> ⚠ Notes regarding the GutenTAG-collection
+> :warning: Notes regarding the GutenTAG-collection
 >
 > The GutenTAG-collection contains its own index-file, called `datasets.csv`.
 >
@@ -371,14 +373,14 @@ This file contains the same metadata as the dataset overview in Sect. [Dataset l
 After publication of our evaluation paper, we collected further dataset collections for TimeEval.
 Those datasets are not included in the evaluation, but we want to share them anyway.
 
-You need the updated [index-File](https://nextcloud.hpi.de/s/H95d3yzfNyGZxML/download) (`datasets.csv`) to use them in TimeEval:
+You need the updated [index-File](https://my.hidrive.com/api/sharelink/download?id=koCGAvOe) (`datasets.csv`) to use them in TimeEval:
 
 | Collection  | Paper | Download Source | Preprocessed (TimeEval format) |
 | :---------- | :---- | :-------------- | :----------------------------- |
-| WADI     | doi:[10.1145/3055366.3055375](https://doi.org/10.1145/3055366.3055375) | [Website](https://itrust.sutd.edu.sg/itrust-labs_datasets/) | (not allowed to share) |
-| SWaT     | doi:[10.1007/978-3-319-71368-7_8](https://doi.org/10.1007/978-3-319-71368-7_8) | [Website](https://itrust.sutd.edu.sg/itrust-labs_datasets/) | (not allowed to share) |
-| TSB-UAD-artificial | doi:[10.14778/3529337.3529354](https://doi.org/10.14778/3529337.3529354) | [Paper Website (Github)](https://github.com/TheDatumOrg/TSB-UAD) | [⬇](https://nextcloud.hpi.de/s/iXTpkqAPTE6NLws/download) (178MB) |
-| TSB-UAD-synthetic | doi:[10.14778/3529337.3529354](https://doi.org/10.14778/3529337.3529354) | [Paper Website (Github)](https://github.com/TheDatumOrg/TSB-UAD) | [⬇](https://nextcloud.hpi.de/s/dY4tCnbNbzn4ZLt/download) (1.8GB) |
+| WADI        | doi:[10.1145/3055366.3055375](https://doi.org/10.1145/3055366.3055375) | [Website](https://itrust.sutd.edu.sg/itrust-labs_datasets/) | (not allowed to share) |
+| SWaT        | doi:[10.1007/978-3-319-71368-7_8](https://doi.org/10.1007/978-3-319-71368-7_8) | [Website](https://itrust.sutd.edu.sg/itrust-labs_datasets/) | (not allowed to share) |
+| TSB-UAD-artificial | doi:[10.14778/3529337.3529354](https://doi.org/10.14778/3529337.3529354) | [Paper Website (Github)](https://github.com/TheDatumOrg/TSB-UAD) | [⬇](https://my.hidrive.com/api/sharelink/download?id=z8CmAXGx) (178MB) |
+| TSB-UAD-synthetic | doi:[10.14778/3529337.3529354](https://doi.org/10.14778/3529337.3529354) | [Paper Website (Github)](https://github.com/TheDatumOrg/TSB-UAD) | [⬇](https://my.hidrive.com/api/sharelink/download?id=kmimguBY) (1.8GB) |
 
 ### Preprocessing
 
