@@ -326,7 +326,6 @@ The following table lists the sources of our datasets and provides the links to 
 You can find all evaluation datasets and results in [this share](https://my.hidrive.com/share/ma4p8w4qqb).
 
 > For the preprocessed datasets in TimeEval format the [MIT License](../LICENSE) applies, where not otherwise stated.
-> https://my.hidrive.com/api/sharelink/download?id=dPCmgheW
 >
 > If you use any of these datasets in your research, please reference the original data source as well as [our paper](../#reference).
 
