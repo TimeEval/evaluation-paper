@@ -310,7 +310,7 @@ The following table shows the dataset collections and their metadata:
 Column "Dim." shows the input dimensionality of the included datasets; either univariate or multivariate and colum "Learn." shows the supported learning types.
 The short forms "u", "m", and "s" stand for "unsupervised", "semi-supervised", and "supervised" respectively.
 
-Note that the datasets of the `GutenTAG`-collection are synthetically generated using our own, novel time series anomaly generator GutenTAG (see [GutenTAG](https://github.com/HPI-Information-Systems/gutentag)).
+Note that the datasets of the `GutenTAG`-collection are synthetically generated using our own, novel time series anomaly generator GutenTAG (see [GutenTAG](https://github.com/TimeEval/gutentag)).
 All other datasets were provided by the community.
 
 > We would like to thank all members of our community that published or provided their data, without which this work would not have been possible.
@@ -391,7 +391,7 @@ The preprocessing had the following goals:
 3. Extraction of metadata
 
 **We do not perform standardization, feature extraction, or similar steps** because this might be different for different algorithms and should, thus, be part of the algorithm.
-We provide the individual preprocessing scripts per collection in the [TimeEval repository](https://github.com/HPI-Information-Systems/TimeEval/tree/main/notebooks/data-prep).
+We provide the individual preprocessing scripts per collection in the [TimeEval repository](https://github.com/TimeEval/TimeEval/tree/main/notebooks/data-prep).
 
 ### Canonical Dataset Format
 

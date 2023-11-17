@@ -130,7 +130,7 @@ The following section presents the key insights that we discovered throughout th
 5. Due to the lack of structure in chaotic time series, most algorithms struggle to find a suitable representation for normal behavior or cannot distinguish between normal and abnormal subsequences at all. This class of time series is very challenging for anomaly detection algorithms and requires future work.
 6. Anomalies on periodic time series are easier to detect than on non-periodic time series.
 7. Anomaly detection on univariate time series is on average easier than on multivariate time series.
-8. An *extremum* seems to be the easiest anomaly type and a *trend* the hardest anomaly type. Please refer to the documentation of [GutenTAG](https://github.com/HPI-Information-Systems/gutentag) for a definition of these anomaly types.
+8. An *extremum* seems to be the easiest anomaly type and a *trend* the hardest anomaly type. Please refer to the documentation of [GutenTAG](https://github.com/TimeEval/gutentag) for a definition of these anomaly types.
 
 ### Specific Findings
 
@@ -146,9 +146,9 @@ The following section presents the key insights that we discovered throughout th
 
 - Dataset download-links can be found on the [datasets-page](./notebooks/Datasets.html)
 - Source code repositories:
-  - Evaluation tool TimeEval: [Github](https://github.com/HPI-Information-Systems/TimeEval)
-  - Time series anomaly generator GutenTAG: [Github](https://github.com/HPI-Information-Systems/gutentag)
-  - Algorithm source code (and necessary docker images): [Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms)
+  - Evaluation tool TimeEval: [Github](https://github.com/TimeEval/TimeEval)
+  - Time series anomaly generator GutenTAG: [Github](https://github.com/TimeEval/gutentag)
+  - Algorithm source code (and necessary docker images): [Github](https://github.com/TimeEval/TimeEval-algorithms)
 - [HPI umbrella project](https://hpi.de/naumann/projects/distributed-computing/efficient-subsequence-anomaly-detection-on-time-series-data.html)
 
 ## References
@@ -173,4 +173,4 @@ The following section presents the key insights that we discovered throughout th
 [^JacobEtAl2021Exathlon]: Vincent Jacob, Fei Song, Arnaud Stiegler, Bijan Rad, YanleiDiao, and Nesime Tatbul. 2021. Exathlon: A Benchmark forExplainable Anomaly Detection over Time Series.Proceed-ings of the VLDB Endowment (PVLDB), 14, 2613–2626.
 
 
-[paper]: # "paper download link pending"
+[paper]: Sebastian Schmidl, Phillip Wenig, and Thorsten Papenbrock. "Anomaly Detection in Time Series: A Comprehensive Evaluation." PVLDB, 15(9): 1779 - 1797, 2022. doi:[10.14778/3538598.3538602](https://doi.org/10.14778/3538598.3538602)

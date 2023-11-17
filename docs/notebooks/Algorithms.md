@@ -1005,81 +1005,81 @@ We implemented __71__ of the total collection. These implemented algorithms are 
 
 ## Implementation Details
 
-More than half of the __71__ chosen algorithms had to be reimplemented by ourselves. However, some authors provided algorithm implementations or community versions exist. All implementations can be found in [our Github repository](https://github.com/HPI-Information-Systems/TimeEval-algorithms).
+More than half of the __71__ chosen algorithms had to be reimplemented by ourselves. However, some authors provided algorithm implementations or community versions exist. All implementations can be found in [our Github repository](https://github.com/TimeEval/TimeEval-algorithms).
 
 |Method Name|Source Code Origin|Language|License|Method Family||
 |---|---|---|---|---|---|
-|ARIMA|own (John Paparrizos and team)|Python|no license|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/arima)|
-|AE|own|Python, Tensorflow|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/autoencoder)|
-|Bagel|original|Python|no license|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/bagel)|
-|CBLOF|community (PyOD)|Python|BSD 2|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/cblof)|
-|COF|community (PyOD)|Python|BSD 2|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/cof)|
-|COPOD|community (PyOD)|Python|BSD 2|distribution|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/copod)|
-|DAE|own|Python, Tensorflow|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/dae)|
-|DBStream|original|R|no license|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/dbstream)|
-|DeepAnT|own|Python, Pytorch|no license|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/deepant)|
-|DeepNAP|own|Python, Pytorch|MIT|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/deepnap)|
-|Donut|original|Python, Pytorch|no license|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/donut)|
-|DSPOT|original|Python|GPL 3.0|distribution|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/dspot)|
-|DWT-MLEAD|own|Python|MIT|distribution|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/dwt_mlead)|
-|EIF|original|Python|UIUC|trees|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/eif)|
-|EncDec-AD|own|Python, Pytorch|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/encdec_ad)|
-|Ensemble GI|own|Python|MIT|encoding|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/ensemble_gi)|
-|Fast-MCD|own|Python|MIT|distribution|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/fast_mcd)|
-|FFT|own|Python|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/fft)|
-|RForest|own|Python|MIT|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/generic_rf)|
-|XGBoosting|own|Python|MIT|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/generic_xgb)|
-|GrammarViz|original|Java|GPL 2.0|encoding|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/grammarviz3)|
-|HBOS|community (PyOD)|Python|BSD 2|distribution|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/hbos)|
-|HealthESN|own|Python|MIT|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/health_esn)|
-|HIF|original|Python|GPL 2.0|trees|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/hif)|
-|HOT SAX|original|Python|GPL 2.0|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/hotsax)|
-|Hybrid KNN|own|Python, Pytorch|MIT|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/hybrid_knn)|
-|IF-LOF|own|Python|MIT|trees|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/if_lof)|
-|iForest|community (PyOD)|Python|BSD 2|trees|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/iforest)|
-|IE-CAE|own|Python, Pytorch|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/img_embedding_cae)|
-|k-Means|own|Python|MIT|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/kmeans)|
-|KNN|community (PyOD)|Python|BSD 2|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/knn)|
-|LaserDBN|own|Python|MIT|encoding|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/laser_dbn)|
-|Left STAMPi|original|Python|BSD|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/left_stampi)|
-|LOF|community (PyOD)|Python|BSD 2|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/lof)|
-|LSTM-AD|own|Python, Pytorch|MIT|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/lstm_ad)|
-|LSTM-VAE|own|Python, Tensorflow|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/lstm_vae)|
-|MedianMethod|own|Python|MIT|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/median_method)|
-|MSCRED|own|Python, Tensorflow|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/mscred)|
-|MTAD-GAT|own|Python, Pytorch|MIT|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/mtad_gat)|
-|MultiHMM|own|Python|MIT|encoding|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/multi_hmm)|
-|NormA|original|Python|private|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/norma)|
-|Normalizing Flows|own|Python, Pytorch|MIT|distribution|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/normalizing_flows)|
-|NoveltySVR|own|Python|GPL 3.0|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/novelty_svr)|
-|NumentaHTM|original|Python|AGPL|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/numenta_htm)|
-|OceanWNN|own|Python, Pytorch|MIT|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/ocean_wnn)|
-|OmniAnomaly|original|Python, Tensorflow|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/omnianomaly)|
-|PCC|community (PyOD)|Python|BSD 2|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/pcc)|
-|PCI|own|Python|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/pci)|
-|PS-SVM|own|Python|MIT|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/phasespace_svm)|
-|PST|own|R|GPL|encoding|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/pst)|
-|RBForest|own|Python|MIT|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/random_black_forest)|
-|RobustPCA|community|Python|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/robust_pca)|
-|S-H-ESD|own|R|GPL 3.0|distribution|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/s_h_esd)|
-|SAND|original|Python|private|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/sand)|
-|SARIMA|own|Python|BSD 3.0|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/sarima)|
-|Series2Graph|original|Python|private|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/series2graph)|
-|SR|original|Python|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/sr)|
-|SR-CNN|original|Python, Pytorch|MIT|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/sr_cnn)|
-|SSA|own (John Paparrizos and team)|Python|no license|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/ssa)|
-|STAMP|original|R|Apache|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/stamp)|
-|STOMP|original|R|Apache|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/stomp)|
-|Sub-Fast-MCD|own|Python|MIT|distribution|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/subsequence_fast_mcd)|
-|Sub-IF|own|Python|MIT|trees|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/subsequence_if)|
-|Sub-LOF|own|Python|MIT|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/subsequence_lof)|
-|TAnoGAN|own|Python, Pytorch|no license|reconstruction|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/tanogan)|
-|TARZAN|original|Python|no license|encoding|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/tarzan)|
-|Telemanom|original|Python, Tensorflow|Caltech|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/telemanom)|
-|Torsk|original|Python, Pytorch|no license|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/torsk)|
-|Triple ES|own|Python|MIT|forecasting|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/triple_es)|
-|TSBitmap|community|Python|no license|encoding|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/ts_bitmap)|
-|VALMOD|original|R|Apache|distance|[→Github](https://github.com/HPI-Information-Systems/TimeEval-algorithms/blob/main/valmod)|
+|ARIMA|own (John Paparrizos and team)|Python|no license|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/arima)|
+|AE|own|Python, Tensorflow|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/autoencoder)|
+|Bagel|original|Python|no license|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/bagel)|
+|CBLOF|community (PyOD)|Python|BSD 2|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/cblof)|
+|COF|community (PyOD)|Python|BSD 2|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/cof)|
+|COPOD|community (PyOD)|Python|BSD 2|distribution|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/copod)|
+|DAE|own|Python, Tensorflow|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/dae)|
+|DBStream|original|R|no license|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/dbstream)|
+|DeepAnT|own|Python, Pytorch|no license|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/deepant)|
+|DeepNAP|own|Python, Pytorch|MIT|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/deepnap)|
+|Donut|original|Python, Pytorch|no license|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/donut)|
+|DSPOT|original|Python|GPL 3.0|distribution|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/dspot)|
+|DWT-MLEAD|own|Python|MIT|distribution|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/dwt_mlead)|
+|EIF|original|Python|UIUC|trees|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/eif)|
+|EncDec-AD|own|Python, Pytorch|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/encdec_ad)|
+|Ensemble GI|own|Python|MIT|encoding|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/ensemble_gi)|
+|Fast-MCD|own|Python|MIT|distribution|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/fast_mcd)|
+|FFT|own|Python|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/fft)|
+|RForest|own|Python|MIT|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/generic_rf)|
+|XGBoosting|own|Python|MIT|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/generic_xgb)|
+|GrammarViz|original|Java|GPL 2.0|encoding|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/grammarviz3)|
+|HBOS|community (PyOD)|Python|BSD 2|distribution|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/hbos)|
+|HealthESN|own|Python|MIT|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/health_esn)|
+|HIF|original|Python|GPL 2.0|trees|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/hif)|
+|HOT SAX|original|Python|GPL 2.0|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/hotsax)|
+|Hybrid KNN|own|Python, Pytorch|MIT|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/hybrid_knn)|
+|IF-LOF|own|Python|MIT|trees|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/if_lof)|
+|iForest|community (PyOD)|Python|BSD 2|trees|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/iforest)|
+|IE-CAE|own|Python, Pytorch|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/img_embedding_cae)|
+|k-Means|own|Python|MIT|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/kmeans)|
+|KNN|community (PyOD)|Python|BSD 2|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/knn)|
+|LaserDBN|own|Python|MIT|encoding|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/laser_dbn)|
+|Left STAMPi|original|Python|BSD|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/left_stampi)|
+|LOF|community (PyOD)|Python|BSD 2|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/lof)|
+|LSTM-AD|own|Python, Pytorch|MIT|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/lstm_ad)|
+|LSTM-VAE|own|Python, Tensorflow|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/lstm_vae)|
+|MedianMethod|own|Python|MIT|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/median_method)|
+|MSCRED|own|Python, Tensorflow|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/mscred)|
+|MTAD-GAT|own|Python, Pytorch|MIT|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/mtad_gat)|
+|MultiHMM|own|Python|MIT|encoding|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/multi_hmm)|
+|NormA|original|Python|private|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/norma)|
+|Normalizing Flows|own|Python, Pytorch|MIT|distribution|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/normalizing_flows)|
+|NoveltySVR|own|Python|GPL 3.0|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/novelty_svr)|
+|NumentaHTM|original|Python|AGPL|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/numenta_htm)|
+|OceanWNN|own|Python, Pytorch|MIT|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/ocean_wnn)|
+|OmniAnomaly|original|Python, Tensorflow|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/omnianomaly)|
+|PCC|community (PyOD)|Python|BSD 2|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/pcc)|
+|PCI|own|Python|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/pci)|
+|PS-SVM|own|Python|MIT|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/phasespace_svm)|
+|PST|own|R|GPL|encoding|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/pst)|
+|RBForest|own|Python|MIT|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/random_black_forest)|
+|RobustPCA|community|Python|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/robust_pca)|
+|S-H-ESD|own|R|GPL 3.0|distribution|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/s_h_esd)|
+|SAND|original|Python|private|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/sand)|
+|SARIMA|own|Python|BSD 3.0|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/sarima)|
+|Series2Graph|original|Python|private|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/series2graph)|
+|SR|original|Python|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/sr)|
+|SR-CNN|original|Python, Pytorch|MIT|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/sr_cnn)|
+|SSA|own (John Paparrizos and team)|Python|no license|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/ssa)|
+|STAMP|original|R|Apache|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/stamp)|
+|STOMP|original|R|Apache|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/stomp)|
+|Sub-Fast-MCD|own|Python|MIT|distribution|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/subsequence_fast_mcd)|
+|Sub-IF|own|Python|MIT|trees|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/subsequence_if)|
+|Sub-LOF|own|Python|MIT|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/subsequence_lof)|
+|TAnoGAN|own|Python, Pytorch|no license|reconstruction|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/tanogan)|
+|TARZAN|original|Python|no license|encoding|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/tarzan)|
+|Telemanom|original|Python, Tensorflow|Caltech|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/telemanom)|
+|Torsk|original|Python, Pytorch|no license|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/torsk)|
+|Triple ES|own|Python|MIT|forecasting|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/triple_es)|
+|TSBitmap|community|Python|no license|encoding|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/ts_bitmap)|
+|VALMOD|original|R|Apache|distance|[→Github](https://github.com/TimeEval/TimeEval-algorithms/blob/main/valmod)|
 
 ## Parameterization
 
